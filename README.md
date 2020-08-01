@@ -1,0 +1,3 @@
+# SSG Build Performance Comparison
+
+This file will be useful, eventually ...
