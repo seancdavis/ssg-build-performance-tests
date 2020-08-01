@@ -1,14 +1,17 @@
 {
-  "name": "markdown-generator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "ssg-build-performance-tests",
+  "version": "0.0.1",
+  "description": "A comparison on build performance of popular SSGs, as they are tasked with processing local markdown files as the data source.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seancdavis/ssg-build-performance-tests"
+  },
   "scripts": {
-    "generate": "node index.js"
+    "generate": "node lib/generate-markdown.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Sean C Davis",
+  "license": "MIT",
   "dependencies": {
     "glob": "^7.1.6",
     "lodash": "^4.17.19",
