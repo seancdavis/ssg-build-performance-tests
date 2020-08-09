@@ -2,7 +2,7 @@ const path = require("path")
 
 const counts = (module.exports = {
   fileCount: [1, 100, 1000, 5000, 10000],
-  logFile: path.resolve(__dirname, "test/log.csv"),
+  logFile: path.resolve(__dirname, "tmp/log.json"),
   tests: [
     {
       name: "Hugo",
