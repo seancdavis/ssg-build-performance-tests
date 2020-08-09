@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-loader": "^8.1.0",
+    "content": "^4.0.6",
     "frontmatter-markdown-loader": "^3.6.0",
     "nuxt": "^2.14.1"
   }
