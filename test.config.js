@@ -65,6 +65,18 @@ module.exports = {
         clean: "yarn clean",
         build: "yarn build && yarn export"
       }
+    },
+    {
+      name: "Nuxt",
+      paths: {
+        build: path.join(__dirname, "ssg/nuxt/dist"),
+        content: path.join(__dirname, "ssg/nuxt/content"),
+        root: path.join(__dirname, "ssg/nuxt")
+      },
+      commands: {
+        clean: "yarn clean",
+        build: "yarn generate"
+      }
     }
   ]
 }
