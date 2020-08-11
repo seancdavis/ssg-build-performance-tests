@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "clean": "rm -rf .next && rm -rf out",
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
