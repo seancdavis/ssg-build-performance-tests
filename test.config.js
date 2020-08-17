@@ -1,10 +1,9 @@
 const path = require("path")
 
 module.exports = {
-  // fileCount: [1, 100],
-  fileCount: [1, 100, 1000, 5000, 10000],
-  // logFile: path.resolve(__dirname, `tmp/log-${new Date().getTime()}.json`),
-  logFile: path.resolve(__dirname, `tmp/log.json`),
+  // fileCount: [1, 100, 1000, 5000, 10000],
+  fileCount: [15000, 15000, 15000, 20000, 20000, 20000],
+  logFile: path.resolve(__dirname, `tmp/log-${new Date().getTime()}.json`),
   tests: [
     {
       name: "Hugo",
