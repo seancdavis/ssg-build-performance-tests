@@ -5,7 +5,7 @@ This file will be useful, eventually ...
 TODO:
 
 - [x] Add Jest
-- [ ] Write tests for generate command
+- [x] Write tests for generate command
 - [ ] Move count and log path as command-line arguments
 - [ ] Store results as a single object in a single file
 - [ ] Only store the last 10 results for each unique test type
