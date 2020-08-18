@@ -7,17 +7,20 @@
     "url": "https://github.com/seancdavis/ssg-build-performance-tests"
   },
   "scripts": {
-    "generate": "node lib/generate-markdown.js",
-    "test": "node lib/test.js"
+    "generate-files": "node lib/generate-files",
+    "build:test": "node lib/build-test.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Sean C Davis",
   "license": "MIT",
   "dependencies": {
     "glob": "^7.1.6",
+    "jest": "^26.4.0",
     "lodash": "^4.17.19",
     "lorem-ipsum": "^2.0.3",
     "progress": "^2.0.3",
+    "rimraf": "^3.0.2",
     "yargs": "^15.4.1"
   }
 }

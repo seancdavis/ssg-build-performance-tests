@@ -4,7 +4,7 @@ This file will be useful, eventually ...
 
 TODO:
 
-- [ ] Add Jest
+- [x] Add Jest
 - [ ] Write tests for generate command
 - [ ] Move count and log path as command-line arguments
 - [ ] Store results as a single object in a single file
