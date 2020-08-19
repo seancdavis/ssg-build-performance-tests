@@ -8,7 +8,7 @@
   },
   "scripts": {
     "generate-files": "node lib/generate-files",
-    "build:test": "node lib/build-test.js",
+    "test:builds": "node lib/test-builds",
     "test": "jest"
   },
   "keywords": [],

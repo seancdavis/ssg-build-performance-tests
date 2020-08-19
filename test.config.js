@@ -1,12 +1,15 @@
 const path = require("path")
 
 module.exports = {
-  // fileCount: [1, 100, 1000, 5000, 10000],
-  fileCount: [15000, 15000, 15000, 20000, 20000, 20000],
-  logFile: path.resolve(__dirname, `tmp/log-${new Date().getTime()}.json`),
+  fileCount: [1, 100],
+  // fileCount: [1, 100, 1000, 5000, 10000, 15000, 20000],
+  log: {
+    path: path.resolve(__dirname, `tmp/results.json`),
+    maxRuns: 3
+  },
   tests: [
     {
-      name: "Hugo",
+      name: "hugo",
       paths: {
         build: path.join(__dirname, "ssg/hugo/public"),
         content: path.join(__dirname, "ssg/hugo/content/pages"),
@@ -18,7 +21,7 @@ module.exports = {
       }
     },
     {
-      name: "Jekyll",
+      name: "jekyll",
       paths: {
         build: path.join(__dirname, "ssg/jekyll/_site"),
         content: path.join(__dirname, "ssg/jekyll/_pages"),
@@ -30,7 +33,7 @@ module.exports = {
       }
     },
     {
-      name: "Gatsby",
+      name: "gatsby",
       paths: {
         build: path.join(__dirname, "ssg/gatsby/public"),
         content: path.join(__dirname, "ssg/gatsby/src/content"),
@@ -42,7 +45,7 @@ module.exports = {
       }
     },
     {
-      name: "Eleventy",
+      name: "eleventy",
       paths: {
         build: path.join(__dirname, "ssg/eleventy/dist"),
         content: path.join(__dirname, "ssg/eleventy/src/pages"),
@@ -54,7 +57,7 @@ module.exports = {
       }
     },
     {
-      name: "Next",
+      name: "next",
       paths: {
         build: path.join(__dirname, "ssg/next/out"),
         content: path.join(__dirname, "ssg/next/_pages"),
@@ -66,7 +69,7 @@ module.exports = {
       }
     },
     {
-      name: "Nuxt",
+      name: "nuxt",
       paths: {
         build: path.join(__dirname, "ssg/nuxt/dist"),
         content: path.join(__dirname, "ssg/nuxt/content"),
