@@ -7,8 +7,7 @@
     "url": "https://github.com/seancdavis/ssg-build-performance-tests"
   },
   "scripts": {
-    "generate-files": "node lib/generate-files",
-    "test:builds": "node lib/test-builds",
+    "test:builds": "node lib/run",
     "test": "jest"
   },
   "keywords": [],
