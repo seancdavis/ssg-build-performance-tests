@@ -4,8 +4,8 @@ module.exports = {
   fileCount: [1, 100],
   // fileCount: [1, 100, 1000, 5000, 10000, 15000, 20000],
   log: {
-    path: path.resolve(__dirname, `tmp/results.json`),
-    maxRuns: 3
+    file: path.resolve(__dirname, `tmp/results.json`),
+    maxHistory: 3
   },
   tests: [
     {
