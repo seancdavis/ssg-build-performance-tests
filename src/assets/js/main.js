@@ -1,11 +1,12 @@
 import Chart from "chart.js"
 import flatMap from "lodash/flatMap"
 import get from "lodash/get"
+import uniq from "lodash/uniq"
 import mean from "lodash/mean"
 
 import results from "../../../tmp/results.json"
 
-var ctx = document.getElementById("myChart").getContext("2d")
+var oneFileCtx = document.getElementById("with-one-file").getContext("2d")
 
 const labels = Object.keys(results)
 const withOneFile = labels.map(name => {
@@ -13,10 +14,10 @@ const withOneFile = labels.map(name => {
   return mean(scores)
 })
 
-console.log(results)
-console.log(withOneFile)
+// console.log(results)
+// console.log(withOneFile)
 
-var myChart = new Chart(ctx, {
+const oneFileChart = new Chart(oneFileCtx, {
   type: "bar",
   data: {
     labels: labels,
@@ -54,5 +55,36 @@ var myChart = new Chart(ctx, {
         }
       ]
     }
+  }
+})
+
+console.log(results)
+const alllabels = uniq(
+  flatMap(
+    Object.values(results).map(tests =>
+      Object.keys(tests).map(key => parseInt(key.replace("count-", "")))
+    )
+  )
+).sort()
+
+const datasets = Object.entries(results).map(([name, tests]) => {
+  const testResults = alllabels.map(count => {
+    return mean(tests[`count-${count}`].map(({ duration }) => duration))
+  })
+  return {
+    label: name,
+    data: testResults
+  }
+})
+
+console.log(datasets)
+
+var allCtx = document.getElementById("multiple-builds").getContext("2d")
+
+const allChart = new Chart(allCtx, {
+  type: "line",
+  data: {
+    labels: alllabels,
+    datasets: datasets
   }
 })
