@@ -1,3 +1,14 @@
+# dependencies
 node_modules/
-tmp/
+
+# mac files
 .DS_Store
+
+# tmp files
+tmp/
+
+# build directory
+dist/
+
+# env vars
+.env*
