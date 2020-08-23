@@ -7,6 +7,10 @@
     "url": "https://github.com/seancdavis/ssg-build-performance-tests"
   },
   "scripts": {
+    "build": "npm-run-all clean build:css build:html build:js",
+    "build:css": "postcss src/assets/css/main.css -o dist/assets/css/bundle.css",
+    "build:html": "eleventy",
+    "build:js": "webpack",
     "clean": "rm -rf dist",
     "develop": "npm-run-all --parallel develop:html develop:js develop:css",
     "develop:css": "postcss src/assets/css/main.css -o dist/assets/css/bundle.css --watch",
