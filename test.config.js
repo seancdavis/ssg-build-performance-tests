@@ -1,10 +1,11 @@
 const path = require("path")
 
 module.exports = {
-  fileCount: [1, 100, 1000, 5000, 10000, 15000, 20000],
+  fileCount: [1, 100, 1000, 5000],
+  // fileCount: [10000, 20000],
   log: {
     file: path.resolve(__dirname, `tmp/results.json`),
-    maxHistory: 3
+    maxHistory: 10
   },
   tests: [
     {

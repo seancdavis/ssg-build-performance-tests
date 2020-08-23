@@ -4,5 +4,25 @@ layout: layout
 
 Hello world, this is where the tests can go ...
 
-<canvas id="with-one-file" width="400" height="400"></canvas>
-<canvas id="multiple-builds" width="400" height="400"></canvas>
+<table>
+  <thead>
+    <th>Name</th>
+    {% for label in results.labels %}
+      <th>{{ label }}</th>
+    {% endfor %}
+  </thead>
+  <tbody>
+    {% for result in results.data %}
+      <tr>
+        <td>{{ result.label }}</td>
+        {% for item in result.data %}
+          <td>{{ item }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<canvas id="results-chart" width="400" height="400"></canvas>
+
+<canvas id="results-single-file" width="400" height="400"></canvas>
