@@ -10,6 +10,7 @@ module.exports = {
   tests: [
     {
       name: "hugo",
+      color: "#ff4088",
       paths: {
         build: path.join(__dirname, "ssg/hugo/public"),
         content: path.join(__dirname, "ssg/hugo/content/pages"),
@@ -22,6 +23,7 @@ module.exports = {
     },
     {
       name: "jekyll",
+      color: "#fc0",
       paths: {
         build: path.join(__dirname, "ssg/jekyll/_site"),
         content: path.join(__dirname, "ssg/jekyll/_pages"),
@@ -34,6 +36,7 @@ module.exports = {
     },
     {
       name: "gatsby",
+      color: "#542c85",
       paths: {
         build: path.join(__dirname, "ssg/gatsby/public"),
         content: path.join(__dirname, "ssg/gatsby/src/content"),
@@ -46,6 +49,7 @@ module.exports = {
     },
     {
       name: "eleventy",
+      color: "#222",
       paths: {
         build: path.join(__dirname, "ssg/eleventy/dist"),
         content: path.join(__dirname, "ssg/eleventy/src/pages"),
@@ -58,6 +62,7 @@ module.exports = {
     },
     {
       name: "next",
+      color: "#0070f3",
       paths: {
         build: path.join(__dirname, "ssg/next/out"),
         content: path.join(__dirname, "ssg/next/_pages"),
@@ -70,6 +75,7 @@ module.exports = {
     },
     {
       name: "nuxt",
+      color: "#00c58e",
       paths: {
         build: path.join(__dirname, "ssg/nuxt/dist"),
         content: path.join(__dirname, "ssg/nuxt/content"),

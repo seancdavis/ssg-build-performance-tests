@@ -1,8 +1,20 @@
+const find = require("lodash/find")
 const flatMap = require("lodash/flatMap")
 const mean = require("lodash/mean")
 const uniq = require("lodash/uniq")
 
+const testConfig = require("../../test.config")
 const results = require("../../tmp/results.json")
+
+/**
+ * Extract the appropriate color for the given test result from test.config.js
+ *
+ * @param {string} name Name of the test specified in config file.
+ */
+const getColor = name => {
+  const cfg = find(testConfig.tests, test => test.name === name)
+  return typeof cfg === "object" ? cfg.color : null
+}
 
 module.exports = () => {
   // Extract the labels from the results array as the count of the run. This
@@ -27,6 +39,7 @@ module.exports = () => {
     })
     return {
       label: name,
+      color: getColor(name),
       data: testResults
     }
   })
