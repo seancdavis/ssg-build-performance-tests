@@ -65,14 +65,16 @@ const alllabels = uniq(
       Object.keys(tests).map(key => parseInt(key.replace("count-", "")))
     )
   )
-).sort()
+)
 
 const datasets = Object.entries(results).map(([name, tests]) => {
   const testResults = alllabels.map(count => {
-    return mean(tests[`count-${count}`].map(({ duration }) => duration))
+    const countResults = tests[`count-${count}`]
+    return countResults ? mean(countResults.map(({ duration }) => duration)) : [0]
   })
   return {
     label: name,
+    fill: false,
     data: testResults
   }
 })
