@@ -17,7 +17,7 @@
     "develop:html": "eleventy --serve --port 8000",
     "develop:js": "webpack",
     "test:builds": "node lib/run",
-    "test": "jest"
+    "test": "jest -i"
   },
   "keywords": [],
   "author": "Sean C Davis",
