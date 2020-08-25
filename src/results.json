@@ -1317,16 +1317,6 @@
         "buildHtmlFileCount": 5000,
         "timestamp": 1598315185556
       }
-    ],
-    "count-10000": [
-      {
-        "name": "eleventy",
-        "count": 10000,
-        "duration": 10.543,
-        "buildFileCount": 10000,
-        "buildHtmlFileCount": 10000,
-        "timestamp": 1598317321772
-      }
     ]
   },
   "next": {
