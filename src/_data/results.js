@@ -4,7 +4,7 @@ const mean = require("lodash/mean")
 const uniq = require("lodash/uniq")
 
 const testConfig = require("../../test.config")
-const results = require("../../tmp/results.json")
+const results = require("../../src/results.json")
 
 /**
  * Extract the appropriate color for the given test result from test.config.js
