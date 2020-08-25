@@ -4,7 +4,7 @@ module.exports = {
     require("postcss-nested"),
     require("tailwindcss"),
     require("autoprefixer"),
-    require("postcss-custom-properties")
+    require("postcss-custom-properties"),
     ...(process.env.ELEVENTY_ENV === "production" ? [require("cssnano")] : [])
   ]
 }

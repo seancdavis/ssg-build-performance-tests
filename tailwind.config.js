@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["**/*.html"],
+  purge: ["./src/**/*.html", "./src/**/*.njk", "./src/**/*.md"],
   theme: {
     container: {
       center: true,
@@ -7,5 +7,8 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: []
+  plugins: [],
+  future: {
+    removeDeprecatedGapUtilities: true
+  }
 }

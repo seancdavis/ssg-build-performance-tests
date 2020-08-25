@@ -11,5 +11,6 @@ TODO:
 - [x] Clean up test script
 - [x] Write tests for test script
 - [x] Add a front-end to show results
+- [x] Fix Next build issue with postcss
 - [ ] Write documentation
 - [ ] Deploy to Netlify (run CI)
