@@ -12,3 +12,6 @@ dist/
 
 # env vars
 .env*
+
+# Local Netlify folder
+.netlify/state.json
