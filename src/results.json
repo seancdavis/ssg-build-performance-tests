@@ -4,22 +4,6 @@
       {
         "name": "hugo",
         "count": 1,
-        "duration": 0.049,
-        "buildFileCount": 6,
-        "buildHtmlFileCount": 1,
-        "timestamp": 1598179689070
-      },
-      {
-        "name": "hugo",
-        "count": 1,
-        "duration": 0.046,
-        "buildFileCount": 6,
-        "buildHtmlFileCount": 1,
-        "timestamp": 1598180320534
-      },
-      {
-        "name": "hugo",
-        "count": 1,
         "duration": 0.045,
         "buildFileCount": 6,
         "buildHtmlFileCount": 1,
@@ -48,6 +32,54 @@
         "buildFileCount": 6,
         "buildHtmlFileCount": 1,
         "timestamp": 1598313220143
+      },
+      {
+        "name": "hugo",
+        "count": 1,
+        "duration": 0.046,
+        "buildFileCount": 6,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598313864231
+      },
+      {
+        "name": "hugo",
+        "count": 1,
+        "duration": 0.041,
+        "buildFileCount": 6,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314136595
+      },
+      {
+        "name": "hugo",
+        "count": 1,
+        "duration": 0.044,
+        "buildFileCount": 6,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314351593
+      },
+      {
+        "name": "hugo",
+        "count": 1,
+        "duration": 0.044,
+        "buildFileCount": 6,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314586223
+      },
+      {
+        "name": "hugo",
+        "count": 1,
+        "duration": 0.04,
+        "buildFileCount": 6,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314835588
+      },
+      {
+        "name": "hugo",
+        "count": 1,
+        "duration": 0.04,
+        "buildFileCount": 6,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598315065596
       }
     ],
     "count-100": [
@@ -82,6 +114,54 @@
         "buildFileCount": 105,
         "buildHtmlFileCount": 100,
         "timestamp": 1598181243196
+      },
+      {
+        "name": "hugo",
+        "count": 100,
+        "duration": 0.078,
+        "buildFileCount": 105,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598313864382
+      },
+      {
+        "name": "hugo",
+        "count": 100,
+        "duration": 0.074,
+        "buildFileCount": 105,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314136738
+      },
+      {
+        "name": "hugo",
+        "count": 100,
+        "duration": 0.069,
+        "buildFileCount": 105,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314351736
+      },
+      {
+        "name": "hugo",
+        "count": 100,
+        "duration": 0.068,
+        "buildFileCount": 105,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314586358
+      },
+      {
+        "name": "hugo",
+        "count": 100,
+        "duration": 0.066,
+        "buildFileCount": 105,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314835723
+      },
+      {
+        "name": "hugo",
+        "count": 100,
+        "duration": 0.064,
+        "buildFileCount": 105,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598315065726
       }
     ],
     "count-1000": [
@@ -116,6 +196,54 @@
         "buildFileCount": 1005,
         "buildHtmlFileCount": 1000,
         "timestamp": 1598181243926
+      },
+      {
+        "name": "hugo",
+        "count": 1000,
+        "duration": 0.312,
+        "buildFileCount": 1005,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598313865123
+      },
+      {
+        "name": "hugo",
+        "count": 1000,
+        "duration": 0.312,
+        "buildFileCount": 1005,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314137464
+      },
+      {
+        "name": "hugo",
+        "count": 1000,
+        "duration": 0.294,
+        "buildFileCount": 1005,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314352534
+      },
+      {
+        "name": "hugo",
+        "count": 1000,
+        "duration": 0.31,
+        "buildFileCount": 1005,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314587081
+      },
+      {
+        "name": "hugo",
+        "count": 1000,
+        "duration": 0.312,
+        "buildFileCount": 1005,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314836448
+      },
+      {
+        "name": "hugo",
+        "count": 1000,
+        "duration": 0.315,
+        "buildFileCount": 1005,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598315066494
       }
     ],
     "count-5000": [
@@ -150,27 +278,59 @@
         "buildFileCount": 5005,
         "buildHtmlFileCount": 5000,
         "timestamp": 1598181247508
+      },
+      {
+        "name": "hugo",
+        "count": 5000,
+        "duration": 1.349,
+        "buildFileCount": 5005,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598313868664
+      },
+      {
+        "name": "hugo",
+        "count": 5000,
+        "duration": 1.415,
+        "buildFileCount": 5005,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314140922
+      },
+      {
+        "name": "hugo",
+        "count": 5000,
+        "duration": 1.283,
+        "buildFileCount": 5005,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314356014
+      },
+      {
+        "name": "hugo",
+        "count": 5000,
+        "duration": 1.553,
+        "buildFileCount": 5005,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314590848
+      },
+      {
+        "name": "hugo",
+        "count": 5000,
+        "duration": 1.557,
+        "buildFileCount": 5005,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314840110
+      },
+      {
+        "name": "hugo",
+        "count": 5000,
+        "duration": 1.683,
+        "buildFileCount": 5005,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598315070787
       }
     ]
   },
   "jekyll": {
     "count-1": [
-      {
-        "name": "jekyll",
-        "count": 1,
-        "duration": 0.584,
-        "buildFileCount": 1,
-        "buildHtmlFileCount": 1,
-        "timestamp": 1598179695652
-      },
-      {
-        "name": "jekyll",
-        "count": 1,
-        "duration": 0.675,
-        "buildFileCount": 1,
-        "buildHtmlFileCount": 1,
-        "timestamp": 1598180327422
-      },
       {
         "name": "jekyll",
         "count": 1,
@@ -202,6 +362,54 @@
         "buildFileCount": 1,
         "buildHtmlFileCount": 1,
         "timestamp": 1598313220677
+      },
+      {
+        "name": "jekyll",
+        "count": 1,
+        "duration": 0.61,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598313870683
+      },
+      {
+        "name": "jekyll",
+        "count": 1,
+        "duration": 0.577,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314142762
+      },
+      {
+        "name": "jekyll",
+        "count": 1,
+        "duration": 0.715,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314357992
+      },
+      {
+        "name": "jekyll",
+        "count": 1,
+        "duration": 0.648,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314593632
+      },
+      {
+        "name": "jekyll",
+        "count": 1,
+        "duration": 0.625,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314842608
+      },
+      {
+        "name": "jekyll",
+        "count": 1,
+        "duration": 0.674,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598315073256
       }
     ],
     "count-100": [
@@ -236,6 +444,54 @@
         "buildFileCount": 100,
         "buildHtmlFileCount": 100,
         "timestamp": 1598181250482
+      },
+      {
+        "name": "jekyll",
+        "count": 100,
+        "duration": 0.765,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598313871490
+      },
+      {
+        "name": "jekyll",
+        "count": 100,
+        "duration": 0.699,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314143506
+      },
+      {
+        "name": "jekyll",
+        "count": 100,
+        "duration": 0.851,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314358898
+      },
+      {
+        "name": "jekyll",
+        "count": 100,
+        "duration": 0.763,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314594435
+      },
+      {
+        "name": "jekyll",
+        "count": 100,
+        "duration": 0.764,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314843420
+      },
+      {
+        "name": "jekyll",
+        "count": 100,
+        "duration": 0.768,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598315074073
       }
     ],
     "count-1000": [
@@ -270,6 +526,54 @@
         "buildFileCount": 1000,
         "buildHtmlFileCount": 1000,
         "timestamp": 1598181252608
+      },
+      {
+        "name": "jekyll",
+        "count": 1000,
+        "duration": 1.89,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598313873689
+      },
+      {
+        "name": "jekyll",
+        "count": 1000,
+        "duration": 1.832,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314145657
+      },
+      {
+        "name": "jekyll",
+        "count": 1000,
+        "duration": 2.044,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314361316
+      },
+      {
+        "name": "jekyll",
+        "count": 1000,
+        "duration": 1.754,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314596451
+      },
+      {
+        "name": "jekyll",
+        "count": 1000,
+        "duration": 1.788,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314845477
+      },
+      {
+        "name": "jekyll",
+        "count": 1000,
+        "duration": 1.863,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598315076547
       }
     ],
     "count-5000": [
@@ -304,27 +608,59 @@
         "buildFileCount": 5000,
         "buildHtmlFileCount": 5000,
         "timestamp": 1598181261036
+      },
+      {
+        "name": "jekyll",
+        "count": 5000,
+        "duration": 7.332,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598313882600
+      },
+      {
+        "name": "jekyll",
+        "count": 5000,
+        "duration": 7.214,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314154423
+      },
+      {
+        "name": "jekyll",
+        "count": 5000,
+        "duration": 8.584,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314371596
+      },
+      {
+        "name": "jekyll",
+        "count": 5000,
+        "duration": 7.177,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314605028
+      },
+      {
+        "name": "jekyll",
+        "count": 5000,
+        "duration": 7.417,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314854238
+      },
+      {
+        "name": "jekyll",
+        "count": 5000,
+        "duration": 7.395,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598315085596
       }
     ]
   },
   "gatsby": {
     "count-1": [
-      {
-        "name": "gatsby",
-        "count": 1,
-        "duration": 7.841,
-        "buildFileCount": 15,
-        "buildHtmlFileCount": 1,
-        "timestamp": 1598179718448
-      },
-      {
-        "name": "gatsby",
-        "count": 1,
-        "duration": 8.881,
-        "buildFileCount": 15,
-        "buildHtmlFileCount": 1,
-        "timestamp": 1598180352376
-      },
       {
         "name": "gatsby",
         "count": 1,
@@ -356,6 +692,54 @@
         "buildFileCount": 15,
         "buildHtmlFileCount": 1,
         "timestamp": 1598313229120
+      },
+      {
+        "name": "gatsby",
+        "count": 1,
+        "duration": 8.195,
+        "buildFileCount": 15,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598313894160
+      },
+      {
+        "name": "gatsby",
+        "count": 1,
+        "duration": 8.108,
+        "buildFileCount": 15,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314165277
+      },
+      {
+        "name": "gatsby",
+        "count": 1,
+        "duration": 8.755,
+        "buildFileCount": 15,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314383326
+      },
+      {
+        "name": "gatsby",
+        "count": 1,
+        "duration": 8.654,
+        "buildFileCount": 15,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314617303
+      },
+      {
+        "name": "gatsby",
+        "count": 1,
+        "duration": 8.172,
+        "buildFileCount": 15,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314866652
+      },
+      {
+        "name": "gatsby",
+        "count": 1,
+        "duration": 8.332,
+        "buildFileCount": 15,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598315097432
       }
     ],
     "count-100": [
@@ -390,6 +774,54 @@
         "buildFileCount": 213,
         "buildHtmlFileCount": 100,
         "timestamp": 1598181282845
+      },
+      {
+        "name": "gatsby",
+        "count": 100,
+        "duration": 8.269,
+        "buildFileCount": 213,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598313906400
+      },
+      {
+        "name": "gatsby",
+        "count": 100,
+        "duration": 8.466,
+        "buildFileCount": 213,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314178149
+      },
+      {
+        "name": "gatsby",
+        "count": 100,
+        "duration": 8.44,
+        "buildFileCount": 213,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314395844
+      },
+      {
+        "name": "gatsby",
+        "count": 100,
+        "duration": 8.403,
+        "buildFileCount": 213,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314628524
+      },
+      {
+        "name": "gatsby",
+        "count": 100,
+        "duration": 8.619,
+        "buildFileCount": 213,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314877882
+      },
+      {
+        "name": "gatsby",
+        "count": 100,
+        "duration": 8.2,
+        "buildFileCount": 213,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598315110544
       }
     ],
     "count-1000": [
@@ -424,6 +856,54 @@
         "buildFileCount": 2013,
         "buildHtmlFileCount": 1000,
         "timestamp": 1598181298943
+      },
+      {
+        "name": "gatsby",
+        "count": 1000,
+        "duration": 13.378,
+        "buildFileCount": 2013,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598313923370
+      },
+      {
+        "name": "gatsby",
+        "count": 1000,
+        "duration": 13.235,
+        "buildFileCount": 2013,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314194673
+      },
+      {
+        "name": "gatsby",
+        "count": 1000,
+        "duration": 12.642,
+        "buildFileCount": 2013,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314411799
+      },
+      {
+        "name": "gatsby",
+        "count": 1000,
+        "duration": 13.642,
+        "buildFileCount": 2013,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314645500
+      },
+      {
+        "name": "gatsby",
+        "count": 1000,
+        "duration": 13.195,
+        "buildFileCount": 2013,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314894398
+      },
+      {
+        "name": "gatsby",
+        "count": 1000,
+        "duration": 13.455,
+        "buildFileCount": 2013,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598315127327
       }
     ],
     "count-5000": [
@@ -458,27 +938,59 @@
         "buildFileCount": 10013,
         "buildHtmlFileCount": 5000,
         "timestamp": 1598181337767
+      },
+      {
+        "name": "gatsby",
+        "count": 5000,
+        "duration": 33.388,
+        "buildFileCount": 10013,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598313964308
+      },
+      {
+        "name": "gatsby",
+        "count": 5000,
+        "duration": 32.135,
+        "buildFileCount": 10013,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314233198
+      },
+      {
+        "name": "gatsby",
+        "count": 5000,
+        "duration": 33.065,
+        "buildFileCount": 10013,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314451862
+      },
+      {
+        "name": "gatsby",
+        "count": 5000,
+        "duration": 34.249,
+        "buildFileCount": 10013,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314686524
+      },
+      {
+        "name": "gatsby",
+        "count": 5000,
+        "duration": 31.643,
+        "buildFileCount": 10013,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314932938
+      },
+      {
+        "name": "gatsby",
+        "count": 5000,
+        "duration": 34.182,
+        "buildFileCount": 10013,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598315167638
       }
     ]
   },
   "eleventy": {
     "count-1": [
-      {
-        "name": "eleventy",
-        "count": 1,
-        "duration": 0.67,
-        "buildFileCount": 1,
-        "buildHtmlFileCount": 1,
-        "timestamp": 1598179791876
-      },
-      {
-        "name": "eleventy",
-        "count": 1,
-        "duration": 0.673,
-        "buildFileCount": 1,
-        "buildHtmlFileCount": 1,
-        "timestamp": 1598180433603
-      },
       {
         "name": "eleventy",
         "count": 1,
@@ -510,6 +1022,54 @@
         "buildFileCount": 1,
         "buildHtmlFileCount": 1,
         "timestamp": 1598313231038
+      },
+      {
+        "name": "eleventy",
+        "count": 1,
+        "duration": 0.727,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598313969791
+      },
+      {
+        "name": "eleventy",
+        "count": 1,
+        "duration": 0.572,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314238604
+      },
+      {
+        "name": "eleventy",
+        "count": 1,
+        "duration": 0.601,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314457205
+      },
+      {
+        "name": "eleventy",
+        "count": 1,
+        "duration": 0.6,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314692177
+      },
+      {
+        "name": "eleventy",
+        "count": 1,
+        "duration": 0.531,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598314938016
+      },
+      {
+        "name": "eleventy",
+        "count": 1,
+        "duration": 0.624,
+        "buildFileCount": 1,
+        "buildHtmlFileCount": 1,
+        "timestamp": 1598315173213
       }
     ],
     "count-100": [
@@ -544,6 +1104,54 @@
         "buildFileCount": 100,
         "buildHtmlFileCount": 100,
         "timestamp": 1598181344108
+      },
+      {
+        "name": "eleventy",
+        "count": 100,
+        "duration": 0.69,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598313970934
+      },
+      {
+        "name": "eleventy",
+        "count": 100,
+        "duration": 0.708,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314239819
+      },
+      {
+        "name": "eleventy",
+        "count": 100,
+        "duration": 0.738,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314458405
+      },
+      {
+        "name": "eleventy",
+        "count": 100,
+        "duration": 0.724,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314693409
+      },
+      {
+        "name": "eleventy",
+        "count": 100,
+        "duration": 0.665,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598314939112
+      },
+      {
+        "name": "eleventy",
+        "count": 100,
+        "duration": 0.723,
+        "buildFileCount": 100,
+        "buildHtmlFileCount": 100,
+        "timestamp": 1598315174406
       }
     ],
     "count-1000": [
@@ -578,6 +1186,54 @@
         "buildFileCount": 1000,
         "buildHtmlFileCount": 1000,
         "timestamp": 1598181346681
+      },
+      {
+        "name": "eleventy",
+        "count": 1000,
+        "duration": 1.851,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598313973597
+      },
+      {
+        "name": "eleventy",
+        "count": 1000,
+        "duration": 1.752,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314242343
+      },
+      {
+        "name": "eleventy",
+        "count": 1000,
+        "duration": 1.81,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314461002
+      },
+      {
+        "name": "eleventy",
+        "count": 1000,
+        "duration": 1.935,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314696149
+      },
+      {
+        "name": "eleventy",
+        "count": 1000,
+        "duration": 1.691,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598314941572
+      },
+      {
+        "name": "eleventy",
+        "count": 1000,
+        "duration": 1.821,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598315177043
       }
     ],
     "count-5000": [
@@ -612,27 +1268,59 @@
         "buildFileCount": 5000,
         "buildHtmlFileCount": 5000,
         "timestamp": 1598181354457
+      },
+      {
+        "name": "eleventy",
+        "count": 5000,
+        "duration": 5.813,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598313982169
+      },
+      {
+        "name": "eleventy",
+        "count": 5000,
+        "duration": 5.906,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314250840
+      },
+      {
+        "name": "eleventy",
+        "count": 5000,
+        "duration": 5.967,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314469932
+      },
+      {
+        "name": "eleventy",
+        "count": 5000,
+        "duration": 6.245,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314705409
+      },
+      {
+        "name": "eleventy",
+        "count": 5000,
+        "duration": 6.073,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598314950297
+      },
+      {
+        "name": "eleventy",
+        "count": 5000,
+        "duration": 5.983,
+        "buildFileCount": 5000,
+        "buildHtmlFileCount": 5000,
+        "timestamp": 1598315185556
       }
     ]
   },
   "next": {
     "count-1": [
-      {
-        "name": "next",
-        "count": 1,
-        "duration": 8.033,
-        "buildFileCount": 13,
-        "buildHtmlFileCount": 2,
-        "timestamp": 1598179814182
-      },
-      {
-        "name": "next",
-        "count": 1,
-        "duration": 7.568,
-        "buildFileCount": 13,
-        "buildHtmlFileCount": 2,
-        "timestamp": 1598180455696
-      },
       {
         "name": "next",
         "count": 1,
@@ -664,6 +1352,54 @@
         "buildFileCount": 13,
         "buildHtmlFileCount": 2,
         "timestamp": 1598313237073
+      },
+      {
+        "name": "next",
+        "count": 1,
+        "duration": 7.422,
+        "buildFileCount": 13,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598313991322
+      },
+      {
+        "name": "next",
+        "count": 1,
+        "duration": 6.47,
+        "buildFileCount": 13,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598314258917
+      },
+      {
+        "name": "next",
+        "count": 1,
+        "duration": 7.04,
+        "buildFileCount": 13,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598314478888
+      },
+      {
+        "name": "next",
+        "count": 1,
+        "duration": 6.979,
+        "buildFileCount": 13,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598314714361
+      },
+      {
+        "name": "next",
+        "count": 1,
+        "duration": 7.19,
+        "buildFileCount": 13,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598314959413
+      },
+      {
+        "name": "next",
+        "count": 1,
+        "duration": 7.254,
+        "buildFileCount": 13,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598315194769
       }
     ],
     "count-100": [
@@ -698,6 +1434,54 @@
         "buildFileCount": 211,
         "buildHtmlFileCount": 101,
         "timestamp": 1598181370988
+      },
+      {
+        "name": "next",
+        "count": 100,
+        "duration": 6.688,
+        "buildFileCount": 211,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598313998505
+      },
+      {
+        "name": "next",
+        "count": 100,
+        "duration": 6.923,
+        "buildFileCount": 211,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598314266304
+      },
+      {
+        "name": "next",
+        "count": 100,
+        "duration": 7.473,
+        "buildFileCount": 211,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598314486843
+      },
+      {
+        "name": "next",
+        "count": 100,
+        "duration": 6.929,
+        "buildFileCount": 211,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598314721772
+      },
+      {
+        "name": "next",
+        "count": 100,
+        "duration": 6.979,
+        "buildFileCount": 211,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598314966874
+      },
+      {
+        "name": "next",
+        "count": 100,
+        "duration": 6.822,
+        "buildFileCount": 211,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598315202114
       }
     ],
     "count-1000": [
@@ -732,6 +1516,54 @@
         "buildFileCount": 2011,
         "buildHtmlFileCount": 1001,
         "timestamp": 1598181380478
+      },
+      {
+        "name": "next",
+        "count": 1000,
+        "duration": 7.575,
+        "buildFileCount": 2011,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314006802
+      },
+      {
+        "name": "next",
+        "count": 1000,
+        "duration": 8.032,
+        "buildFileCount": 2011,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314275120
+      },
+      {
+        "name": "next",
+        "count": 1000,
+        "duration": 8.753,
+        "buildFileCount": 2011,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314496421
+      },
+      {
+        "name": "next",
+        "count": 1000,
+        "duration": 8.295,
+        "buildFileCount": 2011,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314730918
+      },
+      {
+        "name": "next",
+        "count": 1000,
+        "duration": 8.443,
+        "buildFileCount": 2011,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314976134
+      },
+      {
+        "name": "next",
+        "count": 1000,
+        "duration": 8.664,
+        "buildFileCount": 2011,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598315211532
       }
     ],
     "count-5000": [
@@ -766,27 +1598,59 @@
         "buildFileCount": 10011,
         "buildHtmlFileCount": 5001,
         "timestamp": 1598181397833
+      },
+      {
+        "name": "next",
+        "count": 5000,
+        "duration": 13.662,
+        "buildFileCount": 10011,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314022731
+      },
+      {
+        "name": "next",
+        "count": 5000,
+        "duration": 13.808,
+        "buildFileCount": 10011,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314291254
+      },
+      {
+        "name": "next",
+        "count": 5000,
+        "duration": 15.216,
+        "buildFileCount": 10011,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314514410
+      },
+      {
+        "name": "next",
+        "count": 5000,
+        "duration": 15.334,
+        "buildFileCount": 10011,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314748812
+      },
+      {
+        "name": "next",
+        "count": 5000,
+        "duration": 15.141,
+        "buildFileCount": 10011,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314993965
+      },
+      {
+        "name": "next",
+        "count": 5000,
+        "duration": 15.661,
+        "buildFileCount": 10011,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598315229720
       }
     ]
   },
   "nuxt": {
     "count-1": [
-      {
-        "name": "nuxt",
-        "count": 1,
-        "duration": 8.157,
-        "buildFileCount": 7,
-        "buildHtmlFileCount": 2,
-        "timestamp": 1598179858469
-      },
-      {
-        "name": "nuxt",
-        "count": 1,
-        "duration": 8.441,
-        "buildFileCount": 7,
-        "buildHtmlFileCount": 2,
-        "timestamp": 1598180499906
-      },
       {
         "name": "nuxt",
         "count": 1,
@@ -818,6 +1682,54 @@
         "buildFileCount": 7,
         "buildHtmlFileCount": 2,
         "timestamp": 1598313247106
+      },
+      {
+        "name": "nuxt",
+        "count": 1,
+        "duration": 8.14,
+        "buildFileCount": 7,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598314033901
+      },
+      {
+        "name": "nuxt",
+        "count": 1,
+        "duration": 8.043,
+        "buildFileCount": 7,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598314303487
+      },
+      {
+        "name": "nuxt",
+        "count": 1,
+        "duration": 8.339,
+        "buildFileCount": 7,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598314526090
+      },
+      {
+        "name": "nuxt",
+        "count": 1,
+        "duration": 8.522,
+        "buildFileCount": 7,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598314760313
+      },
+      {
+        "name": "nuxt",
+        "count": 1,
+        "duration": 8.675,
+        "buildFileCount": 7,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598315006511
+      },
+      {
+        "name": "nuxt",
+        "count": 1,
+        "duration": 8.647,
+        "buildFileCount": 7,
+        "buildHtmlFileCount": 2,
+        "timestamp": 1598315241454
       }
     ],
     "count-100": [
@@ -852,6 +1764,54 @@
         "buildFileCount": 106,
         "buildHtmlFileCount": 101,
         "timestamp": 1598181417549
+      },
+      {
+        "name": "nuxt",
+        "count": 100,
+        "duration": 8.232,
+        "buildFileCount": 106,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598314042565
+      },
+      {
+        "name": "nuxt",
+        "count": 100,
+        "duration": 8.534,
+        "buildFileCount": 106,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598314312464
+      },
+      {
+        "name": "nuxt",
+        "count": 100,
+        "duration": 8.086,
+        "buildFileCount": 106,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598314534636
+      },
+      {
+        "name": "nuxt",
+        "count": 100,
+        "duration": 8.844,
+        "buildFileCount": 106,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598314769673
+      },
+      {
+        "name": "nuxt",
+        "count": 100,
+        "duration": 7.895,
+        "buildFileCount": 106,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598315014850
+      },
+      {
+        "name": "nuxt",
+        "count": 100,
+        "duration": 8.443,
+        "buildFileCount": 106,
+        "buildHtmlFileCount": 101,
+        "timestamp": 1598315250373
       }
     ],
     "count-1000": [
@@ -886,6 +1846,54 @@
         "buildFileCount": 1006,
         "buildHtmlFileCount": 1001,
         "timestamp": 1598181429789
+      },
+      {
+        "name": "nuxt",
+        "count": 1000,
+        "duration": 11.728,
+        "buildFileCount": 1006,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314055058
+      },
+      {
+        "name": "nuxt",
+        "count": 1000,
+        "duration": 10.869,
+        "buildFileCount": 1006,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314324118
+      },
+      {
+        "name": "nuxt",
+        "count": 1000,
+        "duration": 9.877,
+        "buildFileCount": 1006,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314545278
+      },
+      {
+        "name": "nuxt",
+        "count": 1000,
+        "duration": 11.222,
+        "buildFileCount": 1006,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598314781721
+      },
+      {
+        "name": "nuxt",
+        "count": 1000,
+        "duration": 9.63,
+        "buildFileCount": 1006,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598315025237
+      },
+      {
+        "name": "nuxt",
+        "count": 1000,
+        "duration": 11.424,
+        "buildFileCount": 1006,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598315262599
       }
     ],
     "count-5000": [
@@ -920,6 +1928,54 @@
         "buildFileCount": 5006,
         "buildHtmlFileCount": 5001,
         "timestamp": 1598181452823
+      },
+      {
+        "name": "nuxt",
+        "count": 5000,
+        "duration": 20.892,
+        "buildFileCount": 5006,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314078264
+      },
+      {
+        "name": "nuxt",
+        "count": 5000,
+        "duration": 20.468,
+        "buildFileCount": 5006,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314347007
+      },
+      {
+        "name": "nuxt",
+        "count": 5000,
+        "duration": 21.014,
+        "buildFileCount": 5006,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314568573
+      },
+      {
+        "name": "nuxt",
+        "count": 5000,
+        "duration": 20.827,
+        "buildFileCount": 5006,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598314805123
+      },
+      {
+        "name": "nuxt",
+        "count": 5000,
+        "duration": 20.665,
+        "buildFileCount": 5006,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598315048318
+      },
+      {
+        "name": "nuxt",
+        "count": 5000,
+        "duration": 20.812,
+        "buildFileCount": 5006,
+        "buildHtmlFileCount": 5001,
+        "timestamp": 1598315285794
       }
     ]
   }
