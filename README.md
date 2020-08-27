@@ -17,6 +17,8 @@ To keep it as even as possible, the static site generators builds are designed w
 - Only use plugins required to read and write markdown files.
 - Builds are run from scratch after clearing caches.
 
+In addition, the test runner will add a single markdown file and re-run without cleaning, using an optional incremental build command. This provides an opportunity for SSG's with slower build processes to show approaches to scaling.
+
 ## Running Locally
 
 If you'd like to try out this project locally, first clone the project:
@@ -80,7 +82,10 @@ The configuration for a SSG looks like this:
     clean: "rm -rf _site && rm -rf .jekyll-cache",
     // Command to run the build process for the SSG. This should leave HTML
     // files in the build directory after completion.
-    build: "bundle exec jekyll build"
+    build: "bundle exec jekyll build",
+    // Command to run the build process for the SSG while accounting for a
+    // single added markdown file.
+    build: "bundle exec jekyll build --incremental"
   }
 }
 ```
