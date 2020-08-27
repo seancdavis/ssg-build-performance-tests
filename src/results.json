@@ -498,14 +498,6 @@
       {
         "name": "jekyll",
         "count": 1000,
-        "duration": 1.88,
-        "buildFileCount": 1000,
-        "buildHtmlFileCount": 1000,
-        "timestamp": 1598179698651
-      },
-      {
-        "name": "jekyll",
-        "count": 1000,
         "duration": 1.941,
         "buildFileCount": 1000,
         "buildHtmlFileCount": 1000,
@@ -574,6 +566,14 @@
         "buildFileCount": 1000,
         "buildHtmlFileCount": 1000,
         "timestamp": 1598315076547
+      },
+      {
+        "name": "jekyll",
+        "count": 1000,
+        "duration": 1.837,
+        "buildFileCount": 1000,
+        "buildHtmlFileCount": 1000,
+        "timestamp": 1598521552623
       }
     ],
     "count-5000": [
@@ -656,6 +656,16 @@
         "buildFileCount": 5000,
         "buildHtmlFileCount": 5000,
         "timestamp": 1598315085596
+      }
+    ],
+    "incremental-1000": [
+      {
+        "name": "jekyll",
+        "count": 1000,
+        "duration": 1.981,
+        "buildFileCount": 1001,
+        "buildHtmlFileCount": 1001,
+        "timestamp": 1598521554670
       }
     ]
   },

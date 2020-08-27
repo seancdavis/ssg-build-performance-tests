@@ -1,8 +1,8 @@
 const path = require("path")
 
 module.exports = {
-  // fileCount: [1, 100, 1000, 5000],
-  fileCount: [10000, 20000],
+  fileCount: [1, 100, 1000, 5000],
+  // fileCount: [10000, 20000],
   log: {
     file: path.resolve(__dirname, `src/results.json`),
     maxHistory: 10
@@ -18,7 +18,8 @@ module.exports = {
       },
       commands: {
         clean: "rm -rf public",
-        build: "hugo -D"
+        build: "hugo -D",
+        incremental_build: "hugo -D"
       }
     },
     {
@@ -31,7 +32,8 @@ module.exports = {
       },
       commands: {
         clean: "rm -rf _site && rm -rf .jekyll-cache",
-        build: "bundle exec jekyll build"
+        build: "bundle exec jekyll build",
+        incremental_build: "bundle exec jekyll build --incremental"
       }
     },
     {
@@ -44,7 +46,8 @@ module.exports = {
       },
       commands: {
         clean: "yarn clean",
-        build: "yarn build"
+        build: "yarn build",
+        incremental_build: "yarn build"
       }
     },
     {
@@ -57,7 +60,8 @@ module.exports = {
       },
       commands: {
         clean: "yarn clean",
-        build: "yarn build"
+        build: "yarn build",
+        incremental_build: "yarn build"
       }
     },
     {
@@ -70,7 +74,8 @@ module.exports = {
       },
       commands: {
         clean: "yarn clean",
-        build: "yarn build && yarn export"
+        build: "yarn build && yarn export",
+        incremental_build: "yarn build && yarn export"
       }
     },
     {
@@ -83,7 +88,8 @@ module.exports = {
       },
       commands: {
         clean: "yarn clean",
-        build: "yarn generate"
+        build: "yarn generate",
+        incremental_build: "yarn generate"
       }
     }
   ]
