@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rm -rf .nuxt && rm -rf dist",
     "dev": "nuxt",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
+    "build": "nuxt build --quiet",
+    "generate": "nuxt generate --quiet",
     "start": "nuxt start"
   },
   "keywords": [],
