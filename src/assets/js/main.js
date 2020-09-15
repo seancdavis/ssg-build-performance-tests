@@ -10,6 +10,26 @@ const resultsCtx = document.getElementById("results-chart").getContext("2d")
 
 const resultsChart = new Chart(resultsCtx, {
   type: "line",
+  options: {
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: true,
+            labelString: "Number of Files"
+          }
+        }
+      ],
+      yAxes: [
+        {
+          scaleLabel: {
+            display: true,
+            labelString: "Build Time (s)"
+          }
+        }
+      ]
+    }
+  },
   data: {
     labels: results.labels,
     datasets: results.data.map(result => ({
@@ -30,6 +50,24 @@ const resultsSingleFileChart = new Chart(resultsSingleFile, {
   options: {
     legend: {
       display: false
+    },
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: true,
+            labelString: "Static Site Generator"
+          }
+        }
+      ],
+      yAxes: [
+        {
+          scaleLabel: {
+            display: true,
+            labelString: "Build Time (s)"
+          }
+        }
+      ]
     }
   },
   data: {
