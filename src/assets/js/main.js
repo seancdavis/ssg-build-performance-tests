@@ -24,7 +24,10 @@ const resultsChart = new Chart(resultsCtx, {
         {
           scaleLabel: {
             display: true,
-            labelString: "Build Time (s)"
+            labelString: "Build Time"
+          },
+          ticks: {
+            display: false
           }
         }
       ]
@@ -65,6 +68,9 @@ const resultsSingleFileChart = new Chart(resultsSingleFile, {
           scaleLabel: {
             display: true,
             labelString: "Build Time (s)"
+          },
+          ticks: {
+            display: false
           }
         }
       ]
