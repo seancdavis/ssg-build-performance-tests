@@ -11,6 +11,9 @@ const resultsCtx = document.getElementById("results-chart").getContext("2d")
 const resultsChart = new Chart(resultsCtx, {
   type: "line",
   options: {
+    tooltips: {
+      enabled: false
+    },
     scales: {
       xAxes: [
         {
@@ -54,6 +57,9 @@ const resultsSingleFileChart = new Chart(resultsSingleFile, {
     legend: {
       display: false
     },
+    tooltips: {
+      enabled: false
+    },
     scales: {
       xAxes: [
         {
@@ -67,7 +73,7 @@ const resultsSingleFileChart = new Chart(resultsSingleFile, {
         {
           scaleLabel: {
             display: true,
-            labelString: "Build Time (s)"
+            labelString: "Build Time"
           },
           ticks: {
             display: false
