@@ -15,13 +15,15 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(results => {
+    const template = path.resolve(__dirname, "./src/templates/page.js")
+
     results.data.pages.edges.map(({ node: page }) => {
       actions.createPage({
         path: `/pages/${path.basename(
           page.fileAbsolutePath,
           path.extname(page.fileAbsolutePath)
         )}`,
-        component: path.resolve(__dirname, "./src/templates/page.js"),
+        component: template,
         context: {
           id: page.id,
         },
