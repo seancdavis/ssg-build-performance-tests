@@ -8,7 +8,27 @@ layout: layout
     <h2 class="text-2xl">Build Performance Testing</h2>
   </div>
 
-  <div class="mb-12">
+  {#
+  TODO:
+
+    1. Have run command accept a name for the dataset and use that as the count.
+    2. Store results by dataset.
+    3. Show a chart for each dataset.
+        a. Bar chart for base.
+        b. Line for small.
+        c. Line for large.
+    4. Add filter to show all, framework-only, or no-framework results. Update
+       all charts in real time when choosing the filter.
+
+  #}
+
+  {#
+    --- Hide the table ---
+    We want to show relative results. The numbers are less important for these
+    results.
+  #}
+
+  {# <div class="mb-12">
     <h3 class="text-lg font-bold mb-2 text-center">Average Results</h2>
     <table class="table-auto mx-auto">
       <thead>
@@ -28,15 +48,20 @@ layout: layout
         {% endfor %}
       </tbody>
     </table>
-  </div>
+  </div> #}
+
+  {# <div class="max-w-2xl mx-auto mb-12">
+    <h3 class="text-lg font-bold mb-2 text-center">Build Scaling Performance - Large Sites</h2>
+    <canvas id="results-large-chart" width="400" height="400"></canvas>
+  </div> #}
 
   <div class="max-w-2xl mx-auto mb-12">
-    <h3 class="text-lg font-bold mb-2 text-center">Build Scaling Performance</h2>
-    <canvas id="results-chart" width="400" height="400"></canvas>
+    <h3 class="text-lg font-bold mb-2 text-center">Build Scaling Performance - Small Sites</h2>
+    <canvas id="results-small-chart" width="400" height="400"></canvas>
   </div>
 
   <div class="max-w-2xl mx-auto mb-12">
     <h3 class="text-lg font-bold mb-2 text-center">Base Build Times</h2>
-    <canvas id="results-single-file" width="400" height="400"></canvas>
+    <canvas id="results-base-chart" width="400" height="400"></canvas>
   </div>
 </div>

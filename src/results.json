@@ -120,5 +120,679 @@
         }
       ]
     }
+  },
+  "small": {
+    "eleventy": {
+      "count-1": [
+        {
+          "name": "eleventy",
+          "count": 1,
+          "duration": 0.739,
+          "buildFileCount": 1,
+          "buildHtmlFileCount": 1,
+          "timestamp": 1601288188596
+        }
+      ],
+      "count-2": [
+        {
+          "name": "eleventy",
+          "count": 2,
+          "duration": 0.524,
+          "buildFileCount": 2,
+          "buildHtmlFileCount": 2,
+          "timestamp": 1601288189497
+        }
+      ],
+      "count-4": [
+        {
+          "name": "eleventy",
+          "count": 4,
+          "duration": 0.513,
+          "buildFileCount": 4,
+          "buildHtmlFileCount": 4,
+          "timestamp": 1601288190396
+        }
+      ],
+      "count-8": [
+        {
+          "name": "eleventy",
+          "count": 8,
+          "duration": 0.522,
+          "buildFileCount": 8,
+          "buildHtmlFileCount": 8,
+          "timestamp": 1601288191310
+        }
+      ],
+      "count-16": [
+        {
+          "name": "eleventy",
+          "count": 16,
+          "duration": 0.566,
+          "buildFileCount": 16,
+          "buildHtmlFileCount": 16,
+          "timestamp": 1601288192265
+        }
+      ],
+      "count-32": [
+        {
+          "name": "eleventy",
+          "count": 32,
+          "duration": 0.57,
+          "buildFileCount": 32,
+          "buildHtmlFileCount": 32,
+          "timestamp": 1601288193233
+        }
+      ],
+      "count-64": [
+        {
+          "name": "eleventy",
+          "count": 64,
+          "duration": 0.596,
+          "buildFileCount": 64,
+          "buildHtmlFileCount": 64,
+          "timestamp": 1601288194261
+        }
+      ],
+      "count-128": [
+        {
+          "name": "eleventy",
+          "count": 128,
+          "duration": 0.695,
+          "buildFileCount": 128,
+          "buildHtmlFileCount": 128,
+          "timestamp": 1601288195422
+        }
+      ],
+      "count-256": [
+        {
+          "name": "eleventy",
+          "count": 256,
+          "duration": 0.839,
+          "buildFileCount": 256,
+          "buildHtmlFileCount": 256,
+          "timestamp": 1601288196784
+        }
+      ],
+      "count-512": [
+        {
+          "name": "eleventy",
+          "count": 512,
+          "duration": 1.186,
+          "buildFileCount": 512,
+          "buildHtmlFileCount": 512,
+          "timestamp": 1601288198652
+        }
+      ],
+      "count-1024": [
+        {
+          "name": "eleventy",
+          "count": 1024,
+          "duration": 1.713,
+          "buildFileCount": 1024,
+          "buildHtmlFileCount": 1024,
+          "timestamp": 1601288201341
+        }
+      ]
+    },
+    "gatsby": {
+      "count-1": [
+        {
+          "name": "gatsby",
+          "count": 1,
+          "duration": 11.292,
+          "buildFileCount": 17,
+          "buildHtmlFileCount": 1,
+          "timestamp": 1601288215142
+        }
+      ],
+      "count-2": [
+        {
+          "name": "gatsby",
+          "count": 2,
+          "duration": 7.085,
+          "buildFileCount": 19,
+          "buildHtmlFileCount": 2,
+          "timestamp": 1601288224480
+        }
+      ],
+      "count-4": [
+        {
+          "name": "gatsby",
+          "count": 4,
+          "duration": 7.093,
+          "buildFileCount": 23,
+          "buildHtmlFileCount": 4,
+          "timestamp": 1601288233817
+        }
+      ],
+      "count-8": [
+        {
+          "name": "gatsby",
+          "count": 8,
+          "duration": 7.124,
+          "buildFileCount": 31,
+          "buildHtmlFileCount": 8,
+          "timestamp": 1601288243053
+        }
+      ],
+      "count-16": [
+        {
+          "name": "gatsby",
+          "count": 16,
+          "duration": 7.597,
+          "buildFileCount": 47,
+          "buildHtmlFileCount": 16,
+          "timestamp": 1601288253026
+        }
+      ],
+      "count-32": [
+        {
+          "name": "gatsby",
+          "count": 32,
+          "duration": 7.335,
+          "buildFileCount": 79,
+          "buildHtmlFileCount": 32,
+          "timestamp": 1601288262640
+        }
+      ],
+      "count-64": [
+        {
+          "name": "gatsby",
+          "count": 64,
+          "duration": 7.975,
+          "buildFileCount": 143,
+          "buildHtmlFileCount": 64,
+          "timestamp": 1601288272898
+        }
+      ],
+      "count-128": [
+        {
+          "name": "gatsby",
+          "count": 128,
+          "duration": 7.738,
+          "buildFileCount": 271,
+          "buildHtmlFileCount": 128,
+          "timestamp": 1601288282913
+        }
+      ],
+      "count-256": [
+        {
+          "name": "gatsby",
+          "count": 256,
+          "duration": 10.483,
+          "buildFileCount": 527,
+          "buildHtmlFileCount": 256,
+          "timestamp": 1601288295774
+        }
+      ],
+      "count-512": [
+        {
+          "name": "gatsby",
+          "count": 512,
+          "duration": 10.855,
+          "buildFileCount": 1039,
+          "buildHtmlFileCount": 512,
+          "timestamp": 1601288309370
+        }
+      ],
+      "count-1024": [
+        {
+          "name": "gatsby",
+          "count": 1024,
+          "duration": 16.95,
+          "buildFileCount": 2063,
+          "buildHtmlFileCount": 1024,
+          "timestamp": 1601288329543
+        }
+      ]
+    },
+    "hugo": {
+      "count-1": [
+        {
+          "name": "hugo",
+          "count": 1,
+          "duration": 0.279,
+          "buildFileCount": 6,
+          "buildHtmlFileCount": 1,
+          "timestamp": 1601288331638
+        }
+      ],
+      "count-2": [
+        {
+          "name": "hugo",
+          "count": 2,
+          "duration": 0.053,
+          "buildFileCount": 7,
+          "buildHtmlFileCount": 2,
+          "timestamp": 1601288331723
+        }
+      ],
+      "count-4": [
+        {
+          "name": "hugo",
+          "count": 4,
+          "duration": 0.049,
+          "buildFileCount": 9,
+          "buildHtmlFileCount": 4,
+          "timestamp": 1601288331790
+        }
+      ],
+      "count-8": [
+        {
+          "name": "hugo",
+          "count": 8,
+          "duration": 0.05,
+          "buildFileCount": 13,
+          "buildHtmlFileCount": 8,
+          "timestamp": 1601288331860
+        }
+      ],
+      "count-16": [
+        {
+          "name": "hugo",
+          "count": 16,
+          "duration": 0.05,
+          "buildFileCount": 21,
+          "buildHtmlFileCount": 16,
+          "timestamp": 1601288331935
+        }
+      ],
+      "count-32": [
+        {
+          "name": "hugo",
+          "count": 32,
+          "duration": 0.052,
+          "buildFileCount": 37,
+          "buildHtmlFileCount": 32,
+          "timestamp": 1601288332017
+        }
+      ],
+      "count-64": [
+        {
+          "name": "hugo",
+          "count": 64,
+          "duration": 0.055,
+          "buildFileCount": 69,
+          "buildHtmlFileCount": 64,
+          "timestamp": 1601288332118
+        }
+      ],
+      "count-128": [
+        {
+          "name": "hugo",
+          "count": 128,
+          "duration": 0.073,
+          "buildFileCount": 133,
+          "buildHtmlFileCount": 128,
+          "timestamp": 1601288332265
+        }
+      ],
+      "count-256": [
+        {
+          "name": "hugo",
+          "count": 256,
+          "duration": 0.145,
+          "buildFileCount": 261,
+          "buildHtmlFileCount": 256,
+          "timestamp": 1601288332553
+        }
+      ],
+      "count-512": [
+        {
+          "name": "hugo",
+          "count": 512,
+          "duration": 0.216,
+          "buildFileCount": 517,
+          "buildHtmlFileCount": 512,
+          "timestamp": 1601288333164
+        }
+      ],
+      "count-1024": [
+        {
+          "name": "hugo",
+          "count": 1024,
+          "duration": 0.35,
+          "buildFileCount": 1029,
+          "buildHtmlFileCount": 1024,
+          "timestamp": 1601288334193
+        }
+      ]
+    },
+    "jekyll": {
+      "count-1": [
+        {
+          "name": "jekyll",
+          "count": 1,
+          "duration": 1.552,
+          "buildFileCount": 1,
+          "buildHtmlFileCount": 1,
+          "timestamp": 1601288336134
+        }
+      ],
+      "count-2": [
+        {
+          "name": "jekyll",
+          "count": 2,
+          "duration": 0.554,
+          "buildFileCount": 2,
+          "buildHtmlFileCount": 2,
+          "timestamp": 1601288336709
+        }
+      ],
+      "count-4": [
+        {
+          "name": "jekyll",
+          "count": 4,
+          "duration": 0.567,
+          "buildFileCount": 4,
+          "buildHtmlFileCount": 4,
+          "timestamp": 1601288337303
+        }
+      ],
+      "count-8": [
+        {
+          "name": "jekyll",
+          "count": 8,
+          "duration": 0.579,
+          "buildFileCount": 8,
+          "buildHtmlFileCount": 8,
+          "timestamp": 1601288337905
+        }
+      ],
+      "count-16": [
+        {
+          "name": "jekyll",
+          "count": 16,
+          "duration": 0.753,
+          "buildFileCount": 16,
+          "buildHtmlFileCount": 16,
+          "timestamp": 1601288338696
+        }
+      ],
+      "count-32": [
+        {
+          "name": "jekyll",
+          "count": 32,
+          "duration": 0.567,
+          "buildFileCount": 32,
+          "buildHtmlFileCount": 32,
+          "timestamp": 1601288339296
+        }
+      ],
+      "count-64": [
+        {
+          "name": "jekyll",
+          "count": 64,
+          "duration": 0.661,
+          "buildFileCount": 64,
+          "buildHtmlFileCount": 64,
+          "timestamp": 1601288339999
+        }
+      ],
+      "count-128": [
+        {
+          "name": "jekyll",
+          "count": 128,
+          "duration": 0.79,
+          "buildFileCount": 128,
+          "buildHtmlFileCount": 128,
+          "timestamp": 1601288340866
+        }
+      ],
+      "count-256": [
+        {
+          "name": "jekyll",
+          "count": 256,
+          "duration": 0.893,
+          "buildFileCount": 256,
+          "buildHtmlFileCount": 256,
+          "timestamp": 1601288341903
+        }
+      ],
+      "count-512": [
+        {
+          "name": "jekyll",
+          "count": 512,
+          "duration": 1.986,
+          "buildFileCount": 512,
+          "buildHtmlFileCount": 512,
+          "timestamp": 1601288344133
+        }
+      ],
+      "count-1024": [
+        {
+          "name": "jekyll",
+          "count": 1024,
+          "duration": 1.847,
+          "buildFileCount": 1024,
+          "buildHtmlFileCount": 1024,
+          "timestamp": 1601288347236
+        }
+      ]
+    },
+    "next": {
+      "count-1": [
+        {
+          "name": "next",
+          "count": 1,
+          "duration": 7.233,
+          "buildFileCount": 13,
+          "buildHtmlFileCount": 2,
+          "timestamp": 1601288355025
+        }
+      ],
+      "count-2": [
+        {
+          "name": "next",
+          "count": 2,
+          "duration": 5.538,
+          "buildFileCount": 15,
+          "buildHtmlFileCount": 3,
+          "timestamp": 1601288360975
+        }
+      ],
+      "count-4": [
+        {
+          "name": "next",
+          "count": 4,
+          "duration": 5.808,
+          "buildFileCount": 19,
+          "buildHtmlFileCount": 5,
+          "timestamp": 1601288367201
+        }
+      ],
+      "count-8": [
+        {
+          "name": "next",
+          "count": 8,
+          "duration": 5.734,
+          "buildFileCount": 27,
+          "buildHtmlFileCount": 9,
+          "timestamp": 1601288373356
+        }
+      ],
+      "count-16": [
+        {
+          "name": "next",
+          "count": 16,
+          "duration": 7.899,
+          "buildFileCount": 43,
+          "buildHtmlFileCount": 17,
+          "timestamp": 1601288381731
+        }
+      ],
+      "count-32": [
+        {
+          "name": "next",
+          "count": 32,
+          "duration": 6.098,
+          "buildFileCount": 75,
+          "buildHtmlFileCount": 33,
+          "timestamp": 1601288388312
+        }
+      ],
+      "count-64": [
+        {
+          "name": "next",
+          "count": 64,
+          "duration": 6.299,
+          "buildFileCount": 139,
+          "buildHtmlFileCount": 65,
+          "timestamp": 1601288395111
+        }
+      ],
+      "count-128": [
+        {
+          "name": "next",
+          "count": 128,
+          "duration": 6.772,
+          "buildFileCount": 267,
+          "buildHtmlFileCount": 129,
+          "timestamp": 1601288402361
+        }
+      ],
+      "count-256": [
+        {
+          "name": "next",
+          "count": 256,
+          "duration": 7.055,
+          "buildFileCount": 523,
+          "buildHtmlFileCount": 257,
+          "timestamp": 1601288410086
+        }
+      ],
+      "count-512": [
+        {
+          "name": "next",
+          "count": 512,
+          "duration": 7.111,
+          "buildFileCount": 1035,
+          "buildHtmlFileCount": 513,
+          "timestamp": 1601288417873
+        }
+      ],
+      "count-1024": [
+        {
+          "name": "next",
+          "count": 1024,
+          "duration": 8.393,
+          "buildFileCount": 2059,
+          "buildHtmlFileCount": 1025,
+          "timestamp": 1601288427238
+        }
+      ]
+    },
+    "nuxt": {
+      "count-1": [
+        {
+          "name": "nuxt",
+          "count": 1,
+          "duration": 10.395,
+          "buildFileCount": 7,
+          "buildHtmlFileCount": 2,
+          "timestamp": 1601288438589
+        }
+      ],
+      "count-2": [
+        {
+          "name": "nuxt",
+          "count": 2,
+          "duration": 7.285,
+          "buildFileCount": 8,
+          "buildHtmlFileCount": 3,
+          "timestamp": 1601288446280
+        }
+      ],
+      "count-4": [
+        {
+          "name": "nuxt",
+          "count": 4,
+          "duration": 7.213,
+          "buildFileCount": 10,
+          "buildHtmlFileCount": 5,
+          "timestamp": 1601288453893
+        }
+      ],
+      "count-8": [
+        {
+          "name": "nuxt",
+          "count": 8,
+          "duration": 7.197,
+          "buildFileCount": 14,
+          "buildHtmlFileCount": 9,
+          "timestamp": 1601288461495
+        }
+      ],
+      "count-16": [
+        {
+          "name": "nuxt",
+          "count": 16,
+          "duration": 7.289,
+          "buildFileCount": 22,
+          "buildHtmlFileCount": 17,
+          "timestamp": 1601288469200
+        }
+      ],
+      "count-32": [
+        {
+          "name": "nuxt",
+          "count": 32,
+          "duration": 7.259,
+          "buildFileCount": 38,
+          "buildHtmlFileCount": 33,
+          "timestamp": 1601288476878
+        }
+      ],
+      "count-64": [
+        {
+          "name": "nuxt",
+          "count": 64,
+          "duration": 7.317,
+          "buildFileCount": 70,
+          "buildHtmlFileCount": 65,
+          "timestamp": 1601288484635
+        }
+      ],
+      "count-128": [
+        {
+          "name": "nuxt",
+          "count": 128,
+          "duration": 7.586,
+          "buildFileCount": 134,
+          "buildHtmlFileCount": 129,
+          "timestamp": 1601288492702
+        }
+      ],
+      "count-256": [
+        {
+          "name": "nuxt",
+          "count": 256,
+          "duration": 7.999,
+          "buildFileCount": 262,
+          "buildHtmlFileCount": 257,
+          "timestamp": 1601288501235
+        }
+      ],
+      "count-512": [
+        {
+          "name": "nuxt",
+          "count": 512,
+          "duration": 8.793,
+          "buildFileCount": 518,
+          "buildHtmlFileCount": 513,
+          "timestamp": 1601288510689
+        }
+      ],
+      "count-1024": [
+        {
+          "name": "nuxt",
+          "count": 1024,
+          "duration": 9.717,
+          "buildFileCount": 1030,
+          "buildHtmlFileCount": 1025,
+          "timestamp": 1601288521280
+        }
+      ]
+    }
   }
 }

@@ -6,50 +6,50 @@ const results = resultsData()
 
 // ---------------------------------------- | Main Chart
 
-const resultsCtx = document.getElementById("results-chart").getContext("2d")
+// const resultsCtx = document.getElementById("results-chart").getContext("2d")
 
-const resultsChart = new Chart(resultsCtx, {
-  type: "line",
-  options: {
-    tooltips: {
-      enabled: false
-    },
-    scales: {
-      xAxes: [
-        {
-          scaleLabel: {
-            display: true,
-            labelString: "Number of Files"
-          }
-        }
-      ],
-      yAxes: [
-        {
-          scaleLabel: {
-            display: true,
-            labelString: "Build Time"
-          },
-          ticks: {
-            display: false
-          }
-        }
-      ]
-    }
-  },
-  data: {
-    labels: results.labels,
-    datasets: results.data.map(result => ({
-      ...result,
-      fill: false,
-      backgroundColor: result.color,
-      borderColor: result.color
-    }))
-  }
-})
+// const resultsChart = new Chart(resultsCtx, {
+//   type: "line",
+//   options: {
+//     tooltips: {
+//       enabled: false
+//     },
+//     scales: {
+//       xAxes: [
+//         {
+//           scaleLabel: {
+//             display: true,
+//             labelString: "Number of Files"
+//           }
+//         }
+//       ],
+//       yAxes: [
+//         {
+//           scaleLabel: {
+//             display: true,
+//             labelString: "Build Time"
+//           },
+//           ticks: {
+//             display: false
+//           }
+//         }
+//       ]
+//     }
+//   },
+//   data: {
+//     labels: results.labels,
+//     datasets: results.data.map(result => ({
+//       ...result,
+//       fill: false,
+//       backgroundColor: result.color,
+//       borderColor: result.color
+//     }))
+//   }
+// })
 
-// ---------------------------------------- | Runs with 1 File
+// ---------------------------------------- | Base Bar Chart
 
-var resultsSingleFile = document.getElementById("results-single-file").getContext("2d")
+var resultsSingleFile = document.getElementById("results-base-chart").getContext("2d")
 
 const resultsSingleFileChart = new Chart(resultsSingleFile, {
   type: "bar",
@@ -83,12 +83,12 @@ const resultsSingleFileChart = new Chart(resultsSingleFile, {
     }
   },
   data: {
-    labels: results.data.map(({ label }) => label),
+    labels: results.base.data.map(({ label }) => label),
     datasets: [
       {
         label: "Build Time (s)",
-        data: results.data.map(result => result.data[0]),
-        backgroundColor: results.data.map(({ color }) => color)
+        data: results.base.data.map(result => result.data[0]),
+        backgroundColor: results.base.data.map(({ color }) => color)
       }
     ]
   }
