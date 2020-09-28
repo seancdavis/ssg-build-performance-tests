@@ -4,48 +4,52 @@ import resultsData from "../../_data/results"
 
 const results = resultsData()
 
-// ---------------------------------------- | Main Chart
+// ---------------------------------------- | Build Scaling Charts
 
-// const resultsCtx = document.getElementById("results-chart").getContext("2d")
+const smallChartCtx = document.getElementById("results-small-chart").getContext("2d")
 
-// const resultsChart = new Chart(resultsCtx, {
-//   type: "line",
-//   options: {
-//     tooltips: {
-//       enabled: false
-//     },
-//     scales: {
-//       xAxes: [
-//         {
-//           scaleLabel: {
-//             display: true,
-//             labelString: "Number of Files"
-//           }
-//         }
-//       ],
-//       yAxes: [
-//         {
-//           scaleLabel: {
-//             display: true,
-//             labelString: "Build Time"
-//           },
-//           ticks: {
-//             display: false
-//           }
-//         }
-//       ]
-//     }
-//   },
-//   data: {
-//     labels: results.labels,
-//     datasets: results.data.map(result => ({
-//       ...result,
-//       fill: false,
-//       backgroundColor: result.color,
-//       borderColor: result.color
-//     }))
-//   }
-// })
+const scalingChartOptions = {
+  type: "line",
+  options: {
+    tooltips: {
+      enabled: false
+    },
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: true,
+            labelString: "Number of Files"
+          }
+        }
+      ],
+      yAxes: [
+        {
+          scaleLabel: {
+            display: true,
+            labelString: "Build Time"
+          },
+          ticks: {
+            display: false
+          }
+        }
+      ]
+    }
+  }
+}
+
+const smallSitesChart = new Chart(smallChartCtx, {
+  ...scalingChartOptions,
+  data: {
+    labels: results.small.labels,
+    datasets: results.small.data.map(result => ({
+      ...result,
+      fill: false,
+      backgroundColor: result.color,
+      borderColor: result.color
+    }))
+  }
+})
 
 // ---------------------------------------- | Base Bar Chart
 
