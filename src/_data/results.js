@@ -16,6 +16,16 @@ const getColor = name => {
   return typeof cfg === "object" ? cfg.color : null
 }
 
+/**
+ * Extract whether the SSG was based on a framework or not.
+ *
+ * @param {string} name Name of the test specified in config file.
+ */
+const getFramework = name => {
+  const cfg = find(testConfig.tests, test => test.name === name)
+  return typeof cfg === "object" ? cfg.framework || false : false
+}
+
 module.exports = () => {
   // Object that will be returned.
   let output = {}
@@ -45,6 +55,7 @@ module.exports = () => {
       return {
         label: name,
         color: getColor(name),
+        framework: getFramework(name),
         data: testResults
       }
     })
