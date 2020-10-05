@@ -4,13 +4,17 @@ import resultsData from "../../_data/results"
 
 const results = resultsData()
 
-// ---------------------------------------- | Main Chart
+// ---------------------------------------- | Build Scaling Charts
 
-const resultsCtx = document.getElementById("results-chart").getContext("2d")
+const smallChartCtx = document.getElementById("results-small-chart").getContext("2d")
+const largeChartCtx = document.getElementById("results-large-chart").getContext("2d")
 
-const resultsChart = new Chart(resultsCtx, {
+const scalingChartOptions = {
   type: "line",
   options: {
+    tooltips: {
+      enabled: false
+    },
     scales: {
       xAxes: [
         {
@@ -24,15 +28,22 @@ const resultsChart = new Chart(resultsCtx, {
         {
           scaleLabel: {
             display: true,
-            labelString: "Build Time (s)"
+            labelString: "Build Time"
+          },
+          ticks: {
+            display: false
           }
         }
       ]
     }
-  },
+  }
+}
+
+let smallSitesChart = new Chart(smallChartCtx, {
+  ...scalingChartOptions,
   data: {
-    labels: results.labels,
-    datasets: results.data.map(result => ({
+    labels: results.small.labels,
+    datasets: results.small.data.map(result => ({
       ...result,
       fill: false,
       backgroundColor: result.color,
@@ -41,15 +52,31 @@ const resultsChart = new Chart(resultsCtx, {
   }
 })
 
-// ---------------------------------------- | Runs with 1 File
+let largeSitesChart = new Chart(largeChartCtx, {
+  ...scalingChartOptions,
+  data: {
+    labels: results.large.labels,
+    datasets: results.large.data.map(result => ({
+      ...result,
+      fill: false,
+      backgroundColor: result.color,
+      borderColor: result.color
+    }))
+  }
+})
 
-var resultsSingleFile = document.getElementById("results-single-file").getContext("2d")
+// ---------------------------------------- | Base Bar Chart
 
-const resultsSingleFileChart = new Chart(resultsSingleFile, {
+var baseChartCtx = document.getElementById("results-base-chart").getContext("2d")
+
+let baseScalingChart = new Chart(baseChartCtx, {
   type: "bar",
   options: {
     legend: {
       display: false
+    },
+    tooltips: {
+      enabled: false
     },
     scales: {
       xAxes: [
@@ -64,20 +91,80 @@ const resultsSingleFileChart = new Chart(resultsSingleFile, {
         {
           scaleLabel: {
             display: true,
-            labelString: "Build Time (s)"
+            labelString: "Build Time"
+          },
+          ticks: {
+            display: false
           }
         }
       ]
     }
   },
   data: {
-    labels: results.data.map(({ label }) => label),
+    labels: results.base.data.map(({ label }) => label),
     datasets: [
       {
         label: "Build Time (s)",
-        data: results.data.map(result => result.data[0]),
-        backgroundColor: results.data.map(({ color }) => color)
+        data: results.base.data.map(result => result.data[0]),
+        backgroundColor: results.base.data.map(({ color }) => color)
       }
     ]
   }
 })
+
+// ---------------------------------------- | Chart Controls
+
+// const getAll
+
+const filterDatasets = filter => {
+  let baseData, smallData, largeData
+
+  switch (filter) {
+    case "all":
+      baseData = results.base.data
+      smallData = results.small.data
+      largeData = results.large.data
+      break
+    case "framework":
+      baseData = results.base.data.filter(({ framework }) => framework)
+      smallData = results.small.data.filter(({ framework }) => framework)
+      largeData = results.large.data.filter(({ framework }) => framework)
+      break
+    case "non-framework":
+      baseData = results.base.data.filter(({ framework }) => !framework)
+      smallData = results.small.data.filter(({ framework }) => !framework)
+      largeData = results.large.data.filter(({ framework }) => !framework)
+      break
+  }
+
+  // Update base chart.
+  baseScalingChart.data.labels = baseData.map(({ label }) => label)
+  baseScalingChart.data.datasets[0] = {
+    label: "Build Time (s)",
+    data: baseData.map(result => result.data[0]),
+    backgroundColor: baseData.map(({ color }) => color)
+  }
+  baseScalingChart.update()
+
+  // Update small chart.
+  smallSitesChart.data.datasets = smallData.map(result => ({
+    ...result,
+    fill: false,
+    backgroundColor: result.color,
+    borderColor: result.color
+  }))
+  smallSitesChart.update()
+
+  // Update large chart.
+  largeSitesChart.data.datasets = largeData.map(result => ({
+    ...result,
+    fill: false,
+    backgroundColor: result.color,
+    borderColor: result.color
+  }))
+  largeSitesChart.update()
+}
+
+// ---------------------------------------- | Exports
+
+export { filterDatasets }

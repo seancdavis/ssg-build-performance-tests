@@ -3,40 +3,38 @@ layout: layout
 ---
 
 <div class="container py-8">
-  <div class="text-center mb-12">
+  <div class="text-center mb-8">
     <h1 class="text-3xl">Static Site Generators</h1>
     <h2 class="text-2xl">Build Performance Testing</h2>
   </div>
 
-  <div class="mb-12">
-    <h3 class="text-lg font-bold mb-2 text-center">Average Results</h2>
-    <table class="table-auto mx-auto">
-      <thead>
-        <th class="border px-4 py-2 bg-gray-200">Name</th>
-        {% for label in results.labels %}
-          <th class="border px-4 py-2 bg-gray-200">{{ label }}</th>
-        {% endfor %}
-      </thead>
-      <tbody>
-        {% for result in results.data %}
-          <tr>
-            <td class="border px-4 py-2">{{ result.label }}</td>
-            {% for item in result.data %}
-              <td class="border px-4 py-2">{{ item }}</td>
-            {% endfor %}
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+  <div class="mb-4 text-center text-gray-600">
+    <label for="chart-control-all" class="inline-block mx-2">
+      <input type="radio" id="chart-control-all" checked name="chart-control" onclick="App.filterDatasets('all')">
+      Show All
+    </label>
+    <label for="chart-control-framework" class="inline-block mx-2">
+      <input type="radio" id="chart-control-framework" name="chart-control" onclick="App.filterDatasets('framework')">
+      Framework-based Only
+    </label>
+    <label for="chart-control-non-framework" class="inline-block mx-2">
+      <input type="radio" id="chart-control-non-framework" name="chart-control" onclick="App.filterDatasets('non-framework')">
+      Non-framework Only
+    </label>
   </div>
 
   <div class="max-w-2xl mx-auto mb-12">
-    <h3 class="text-lg font-bold mb-2 text-center">Build Scaling Performance</h2>
-    <canvas id="results-chart" width="400" height="400"></canvas>
+    <h3 class="text-lg font-bold mb-2 text-center">Build Scaling Performance - Small Sites</h2>
+    <canvas id="results-small-chart" width="400" height="400"></canvas>
+  </div>
+
+  <div class="max-w-2xl mx-auto mb-12">
+    <h3 class="text-lg font-bold mb-2 text-center">Build Scaling Performance - Large Sites</h2>
+    <canvas id="results-large-chart" width="400" height="400"></canvas>
   </div>
 
   <div class="max-w-2xl mx-auto mb-12">
     <h3 class="text-lg font-bold mb-2 text-center">Base Build Times</h2>
-    <canvas id="results-single-file" width="400" height="400"></canvas>
+    <canvas id="results-base-chart" width="400" height="400"></canvas>
   </div>
 </div>
