@@ -27,13 +27,15 @@ Install dependencies:
 
     $ yarn install
 
-You can adjust the number of files generated for a series of tests by manipulating the value of the `fileCount` array in `test.config.js`.
+You can adjust the number of files generated for a series of tests by manipulating the `datasets` object in `test.config.js`.
 
 Run the tests with:
 
-    $ yarn test:builds
+    $ yarn test:builds [dataset]
 
-Results are cached to `src/results.json`.
+Where `[dataset]` is the key in the dataset object, representing an array of file counts to test against.
+
+If the test run completes all tests successfully, the results are cached to `src/results.json`.
 
 To view formatted output, you can run a development server:
 
