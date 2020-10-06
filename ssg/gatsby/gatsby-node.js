@@ -1,5 +1,21 @@
 const path = require("path")
 
+exports.createSchemaCustomization = ({ actions, schema, getNodesByType }) => {
+  const typeDefs = `
+
+    type Frontmatter @infer {
+      title: String
+    }
+
+    type MarkdownRemark implements Node @infer {
+      fileAbsolutePath: String
+      frontmatter: Frontmatter
+    }
+  `
+
+  actions.createTypes(typeDefs)
+}
+
 exports.createPages = ({ graphql, actions }) => {
   return graphql(`
     {
