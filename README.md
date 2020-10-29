@@ -4,6 +4,8 @@ Measures the build performance at scale for static site generators.
 
 Currently, the builds are run locally and the results are tracked and published to Netlify.
 
+The original results and analysis can be found [in this CSS-Tricks article](https://css-tricks.com/comparing-static-site-generator-build-times/).
+
 ## Test Theory
 
 The goal of this project is to be able to get a rough and relative comparison in build times across static site generators, based on the number of data files being processed.
