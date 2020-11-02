@@ -7,7 +7,8 @@ module.exports = {
     large: [1000, 2000, 4000, 8000, 16000, 32000, 64000]
   },
   log: {
-    file: path.resolve(__dirname, `src/results.json`),
+    hasura_secret: process.env.HASURA_SECRET,
+    hasura_url: process.env.HASURA_URL,
     maxHistory: 10
   },
   tests: [
