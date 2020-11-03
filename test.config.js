@@ -2,7 +2,7 @@ const path = require("path")
 
 module.exports = {
   datasets: {
-    base: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    base: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     small: [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024],
     large: [1000, 2000, 4000, 8000, 16000, 32000, 64000]
   },
@@ -12,19 +12,19 @@ module.exports = {
     maxHistory: 10
   },
   tests: [
-    // {
-    //   name: "eleventy",
-    //   color: "#222",
-    //   paths: {
-    //     build: path.join(__dirname, "ssg/eleventy/dist"),
-    //     content: path.join(__dirname, "ssg/eleventy/src/pages"),
-    //     root: path.join(__dirname, "ssg/eleventy")
-    //   },
-    //   commands: {
-    //     clean: "yarn clean",
-    //     build: "yarn build"
-    //   }
-    // },
+    {
+      name: "eleventy",
+      color: "#222",
+      paths: {
+        build: path.join(__dirname, "ssg/eleventy/dist"),
+        content: path.join(__dirname, "ssg/eleventy/src/pages"),
+        root: path.join(__dirname, "ssg/eleventy")
+      },
+      commands: {
+        clean: "yarn clean",
+        build: "yarn build"
+      }
+    },
     // {
     //   name: "gatsby",
     //   color: "#542c85",
