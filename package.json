@@ -16,6 +16,8 @@
     "develop:css": "postcss src/assets/css/main.css -o dist/assets/css/bundle.css --watch",
     "develop:html": "eleventy --serve --port 8000",
     "develop:js": "webpack",
+    "heroku-postbuild": "echo \"HEROKU: NO BUILD NECESSARY.\"",
+    "start": "node index.js",
     "test:builds": "node lib/run",
     "test": "jest -i"
   },
