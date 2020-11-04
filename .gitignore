@@ -17,4 +17,4 @@ dist/
 .netlify/state.json
 
 # results from database
-src/reults.json
+src/results.json
