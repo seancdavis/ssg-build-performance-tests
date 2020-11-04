@@ -17,6 +17,7 @@
     "develop:html": "eleventy --serve --port 8000",
     "develop:js": "webpack",
     "heroku-postbuild": "echo \"HEROKU: NO BUILD NECESSARY.\"",
+    "import:results": "node lib/import",
     "start": "node index.js",
     "test:builds": "node lib/run",
     "test": "jest -i"
