@@ -7,23 +7,20 @@ const testConfig = require("../../test.config")
 const results = require("../results.json")
 
 /**
- * Extract the appropriate color for the given test result from test.config.js
+ * Extract the appropriate details for the given test result from test.config.js
  *
  * @param {string} name Name of the test specified in config file.
  */
-const getColor = name => {
+const getDetails = name => {
   const cfg = find(testConfig.tests, test => test.name === name)
-  return typeof cfg === "object" ? cfg.color : null
-}
 
-/**
- * Extract whether the SSG was based on a framework or not.
- *
- * @param {string} name Name of the test specified in config file.
- */
-const getFramework = name => {
-  const cfg = find(testConfig.tests, test => test.name === name)
-  return typeof cfg === "object" ? cfg.framework || false : false
+  if (typeof cfg !== "object") return {}
+
+  return {
+    color: cfg.color,
+    framework: cfg.framework,
+    version: cfg.version
+  }
 }
 
 module.exports = () => {
@@ -53,9 +50,8 @@ module.exports = () => {
         return parseFloat(avgResult).toFixed(2)
       })
       return {
+        ...getDetails(name),
         label: name,
-        color: getColor(name),
-        framework: getFramework(name),
         data: testResults
       }
     })
