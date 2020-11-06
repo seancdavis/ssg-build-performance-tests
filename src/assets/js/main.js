@@ -13,9 +13,6 @@ const largeChartCtx = document.getElementById("results-large-chart").getContext(
 const scalingChartOptions = {
   type: "line",
   options: {
-    tooltips: {
-      enabled: false
-    },
     scales: {
       xAxes: [
         {
@@ -29,8 +26,9 @@ const scalingChartOptions = {
         {
           scaleLabel: {
             display: true,
-            labelString: "Build Time"
+            labelString: "Build Time (sec)"
           },
+          type: "logarithmic",
           ticks: {
             display: false
           }
@@ -76,9 +74,6 @@ let baseScalingChart = new Chart(baseChartCtx, {
     legend: {
       display: false
     },
-    tooltips: {
-      enabled: false
-    },
     scales: {
       xAxes: [
         {
@@ -92,10 +87,7 @@ let baseScalingChart = new Chart(baseChartCtx, {
         {
           scaleLabel: {
             display: true,
-            labelString: "Build Time"
-          },
-          ticks: {
-            display: false
+            labelString: "Build Time (sec)"
           }
         }
       ]
