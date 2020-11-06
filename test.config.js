@@ -14,6 +14,7 @@ module.exports = {
   tests: [
     {
       name: "eleventy",
+      version: "0.11.0",
       color: "#222",
       paths: {
         build: path.join(__dirname, "ssg/eleventy/dist"),
@@ -27,6 +28,7 @@ module.exports = {
     },
     {
       name: "gatsby",
+      version: "2.24.64",
       color: "#542c85",
       framework: true,
       paths: {
@@ -41,6 +43,7 @@ module.exports = {
     },
     {
       name: "hugo",
+      version: "0.74.3",
       color: "#ff4088",
       paths: {
         build: path.join(__dirname, "ssg/hugo/public"),
@@ -54,6 +57,7 @@ module.exports = {
     },
     {
       name: "jekyll",
+      version: "4.1.1",
       color: "#fc0",
       paths: {
         build: path.join(__dirname, "ssg/jekyll/_site"),
@@ -67,6 +71,7 @@ module.exports = {
     },
     {
       name: "next",
+      version: "9.5.1",
       color: "#0070f3",
       framework: true,
       paths: {
@@ -81,6 +86,7 @@ module.exports = {
     },
     {
       name: "nuxt",
+      version: "2.14.1",
       color: "#00c58e",
       framework: true,
       paths: {

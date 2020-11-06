@@ -13,6 +13,9 @@ const largeChartCtx = document.getElementById("results-large-chart").getContext(
 const scalingChartOptions = {
   type: "line",
   options: {
+    legend: {
+      display: true
+    },
     tooltips: {
       enabled: false
     },
