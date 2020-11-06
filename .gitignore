@@ -15,3 +15,6 @@ dist/
 
 # Local Netlify folder
 .netlify/state.json
+
+# results from database
+src/results.json

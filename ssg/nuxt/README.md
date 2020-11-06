@@ -1,8 +1,8 @@
-# Next
+# Nuxt
 
 ## Installation
 
 Install JS dependencies:
 
-    $ cd ssg/next
+    $ cd ssg/nuxt
     $ yarn install

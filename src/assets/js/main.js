@@ -1,4 +1,5 @@
 import Chart from "chart.js"
+import get from "lodash/get"
 
 import resultsData from "../../_data/results"
 
@@ -42,8 +43,8 @@ const scalingChartOptions = {
 let smallSitesChart = new Chart(smallChartCtx, {
   ...scalingChartOptions,
   data: {
-    labels: results.small.labels,
-    datasets: results.small.data.map(result => ({
+    labels: get(results, "small.labels") || [],
+    datasets: (get(results, "small.data") || []).map(result => ({
       ...result,
       fill: false,
       backgroundColor: result.color,
@@ -55,8 +56,8 @@ let smallSitesChart = new Chart(smallChartCtx, {
 let largeSitesChart = new Chart(largeChartCtx, {
   ...scalingChartOptions,
   data: {
-    labels: results.large.labels,
-    datasets: results.large.data.map(result => ({
+    labels: get(results, "large.labels") || [],
+    datasets: (get(results, "large.data") || []).map(result => ({
       ...result,
       fill: false,
       backgroundColor: result.color,
@@ -101,12 +102,12 @@ let baseScalingChart = new Chart(baseChartCtx, {
     }
   },
   data: {
-    labels: results.base.data.map(({ label }) => label),
+    labels: (get(results, "base.data") || []).map(({ label }) => label),
     datasets: [
       {
         label: "Build Time (s)",
-        data: results.base.data.map(result => result.data[0]),
-        backgroundColor: results.base.data.map(({ color }) => color)
+        data: (get(results, "base.data") || []).map(result => result.data[0]),
+        backgroundColor: (get(results, "base.data") || []).map(({ color }) => color)
       }
     ]
   }
@@ -121,19 +122,19 @@ const filterDatasets = filter => {
 
   switch (filter) {
     case "all":
-      baseData = results.base.data
-      smallData = results.small.data
-      largeData = results.large.data
+      baseData = get(results, "base.data") || []
+      smallData = get(results, "small.data") || []
+      largeData = get(results, "large.data") || []
       break
     case "framework":
-      baseData = results.base.data.filter(({ framework }) => framework)
-      smallData = results.small.data.filter(({ framework }) => framework)
-      largeData = results.large.data.filter(({ framework }) => framework)
+      baseData = (get(results, "base.data") || []).filter(({ framework }) => framework)
+      smallData = (get(results, "small.data") || []).filter(({ framework }) => framework)
+      largeData = (get(results, "large.data") || []).filter(({ framework }) => framework)
       break
     case "non-framework":
-      baseData = results.base.data.filter(({ framework }) => !framework)
-      smallData = results.small.data.filter(({ framework }) => !framework)
-      largeData = results.large.data.filter(({ framework }) => !framework)
+      baseData = (get(results, "base.data") || []).filter(({ framework }) => !framework)
+      smallData = (get(results, "small.data") || []).filter(({ framework }) => !framework)
+      largeData = (get(results, "large.data") || []).filter(({ framework }) => !framework)
       break
   }
 

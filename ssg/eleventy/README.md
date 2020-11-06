@@ -1,8 +1,8 @@
-# Next
+# Eleventy
 
 ## Installation
 
 Install JS dependencies:
 
-    $ cd ssg/next
+    $ cd ssg/eleventy
     $ yarn install

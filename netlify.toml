@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run import:results && npm run build"
   publish = "dist"
 
 [[plugins]]

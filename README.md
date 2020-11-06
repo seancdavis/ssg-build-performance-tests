@@ -15,7 +15,7 @@ To keep it as even as possible, the static site generators builds are designed w
 - Data source are markdown files consisting of a title (as frontmatter) and body (as file markdown content).
 - The default starter or basic tutorial recommendations mark the foundation for each site.
 - No images are used.
-- No CSS is used, though out-of-the-box support was left alone.
+- No CSS is used, though out-of-the-box support is left alone.
 - Only use plugins required to read and write markdown files.
 - Builds are run from scratch after clearing caches.
 
@@ -33,9 +33,9 @@ You can adjust the number of files generated for a series of tests by manipulati
 
 Run the tests with:
 
-    $ yarn test:builds [dataset]
+    $ yarn test:builds DATASET --generators GENERATORS
 
-Where `[dataset]` is the key in the dataset object, representing an array of file counts to test against.
+Where `DATASET` is the key in the dataset object, representing an array of file counts to test against, and `GENERATORS` is a space-separated list of generator names to run. If `--generators` is omitted, all generators are used in the run.
 
 If the test run completes all tests successfully, the results are cached to `src/results.json`.
 
@@ -48,14 +48,17 @@ The site will be available at localhost:8000. (The front-end uses [Eleventy](htt
 
 ## Adding a Static Site Generator
 
-To add a SSG to be tested, follow these steps:
+To add a SSG to be tested, add your project to the `ssg` directory. Ensure your project follows the test theory (above). Keep in mind the data source should be a series of markdown files. These files should be placed in their own directory and ignored by git. They are automatically generated and destroyed during each test run.
 
-1. Add the site to the `ssg` directory. It should follow the test theory from above.
-2. Create a directory for markdown files to be generated.
-3. Write the code necessary to use those markdown files as a data source and generate a single page for every file. Each page should display the title as an `<h1>` and the body of the markdown file, converted to HTML.
-4. Add your SSG to the `tests` array in `test.config.js`.
+After your site is in good working order, add configuration for it to be run in `test.config.js`. (See below for config details.) You can test that this is working by running:
 
-Check out other projects in `ssg` for an example.
+    $ node lib/run base --generators GENERATOR
+
+Where `GENERATOR` is the `name` of your generator that is specified in `test.config.js`.
+
+Before opening a PR with your new site, add a `README.md` to your project that has installation instructions for getting the project up and running on another machine. See `ssg/jekyll/README.md` for an example.
+
+When everything is in place, open a pull request with your changes. If it looks good, we'll run the builds tests on the test-runner server, and merge after previewing the results.
 
 ### Configuration
 
