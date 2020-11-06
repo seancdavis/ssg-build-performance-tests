@@ -56,9 +56,9 @@ module.exports = {
       }
     },
     {
-      name: "jekyll_upgrade",
+      name: "jekyll",
       version: "4.1.1 (master)",
-      color: "#40ff50",
+      color: "#fc0",
       paths: {
         build: path.join(__dirname, "ssg/jekyll/_site"),
         content: path.join(__dirname, "ssg/jekyll/_pages"),
