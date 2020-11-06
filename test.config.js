@@ -57,7 +57,7 @@ module.exports = {
     },
     {
       name: "jekyll",
-      version: "4.1.1",
+      version: "4.1.1 (master)",
       color: "#fc0",
       paths: {
         build: path.join(__dirname, "ssg/jekyll/_site"),
