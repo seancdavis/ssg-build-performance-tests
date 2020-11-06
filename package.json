@@ -30,6 +30,7 @@
     "@apollo/client": "^3.2.5",
     "apollo-boost": "^0.4.9",
     "autoprefixer": "^9.8.6",
+    "chalk": "^4.1.0",
     "chart.js": "^2.9.3",
     "cssnano": "^4.1.10",
     "express": "^4.17.1",
