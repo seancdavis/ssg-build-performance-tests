@@ -1,0 +1,13 @@
+url: "" # the base hostname & protocol for your site, e.g. https://example.com
+permalink: simple
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default

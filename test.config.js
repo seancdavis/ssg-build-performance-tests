@@ -98,6 +98,20 @@ module.exports = {
         clean: "yarn clean",
         build: "yarn generate"
       }
+    },
+    {
+      name: "bridgetown",
+      version: "0.18.2 (main)",
+      color: "#0f5348",
+      paths: {
+        build: path.join(__dirname, "ssg/bridgetown/output"),
+        content: path.join(__dirname, "ssg/bridgetown/src/_pages"),
+        root: path.join(__dirname, "ssg/bridgetown")
+      },
+      commands: {
+        clean: "bundle exec bridgetown clean",
+        build: "bundle exec bridgetown build"
+      }
     }
   ]
 }
