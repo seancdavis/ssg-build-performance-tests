@@ -71,6 +71,21 @@ module.exports = {
       }
     },
     {
+      name: "microsite",
+      version: "0.6.14",
+      color: "#FF998B",
+      framework: true,
+      paths: {
+        build: path.join(__dirname, "ssg/microsite/dist"),
+        content: path.join(__dirname, "ssg/microsite/_pages"),
+        root: path.join(__dirname, "ssg/microsite")
+      },
+      commands: {
+        clean: "yarn clean",
+        build: "yarn build"
+      }
+    },
+    {
       name: "next",
       version: "9.5.4",
       color: "#0070f3",
