@@ -11,10 +11,6 @@ Then change into this directory and install the required ruby:
     $ cd ssg/jekyll
     $ rbenv install
 
-Next, make sure you have bundler installed:
-
-    $ gem install bundler
-
-And install the bundle:
+And install the dependencies:
 
     $ bundle install

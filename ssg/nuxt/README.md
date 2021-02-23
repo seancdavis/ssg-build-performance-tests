@@ -5,4 +5,4 @@
 Install JS dependencies:
 
     $ cd ssg/nuxt
-    $ yarn install
+    $ npm install

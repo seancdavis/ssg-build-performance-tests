@@ -27,13 +27,13 @@ If you'd like to try out this project locally, first clone the project:
 
 Install dependencies:
 
-    $ yarn install
+    $ npm install
 
 You can adjust the number of files generated for a series of tests by manipulating the `datasets` object in `test.config.js`.
 
 Run the tests with:
 
-    $ yarn test:builds DATASET --generators GENERATORS
+    $ npm run test:builds DATASET --generators GENERATORS
 
 Where `DATASET` is the key in the dataset object, representing an array of file counts to test against, and `GENERATORS` is a space-separated list of generator names to run. If `--generators` is omitted, all generators are used in the run.
 
@@ -41,8 +41,8 @@ If the test run completes all tests successfully, the results are cached to `src
 
 To view formatted output, you can run a development server:
 
-    $ yarn clean
-    $ yarn develop
+    $ npm run clean
+    $ npm run develop
 
 The site will be available at localhost:8000. (The front-end uses [Eleventy](https://www.11ty.dev/).)
 
