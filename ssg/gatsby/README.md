@@ -5,4 +5,4 @@
 Install JS dependencies:
 
     $ cd ssg/gatsby
-    $ yarn install
+    $ npm install

@@ -5,4 +5,4 @@
 Install JS dependencies:
 
     $ cd ssg/eleventy
-    $ yarn install
+    $ npm install

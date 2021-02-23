@@ -22,8 +22,8 @@ module.exports = {
         root: path.join(__dirname, "ssg/eleventy")
       },
       commands: {
-        clean: "yarn clean",
-        build: "yarn build"
+        clean: "npm run clean",
+        build: "npm run build"
       }
     },
     {
@@ -37,8 +37,8 @@ module.exports = {
         root: path.join(__dirname, "ssg/gatsby")
       },
       commands: {
-        clean: "yarn clean",
-        build: "NODE_OPTIONS=--max_old_space_size=4096 yarn build"
+        clean: "npm run clean",
+        build: "NODE_OPTIONS=--max_old_space_size=4096 npm run build"
       }
     },
     {
@@ -80,8 +80,8 @@ module.exports = {
         root: path.join(__dirname, "ssg/next")
       },
       commands: {
-        clean: "yarn clean",
-        build: "yarn build && yarn export"
+        clean: "npm run clean",
+        build: "npm run build && npm run export"
       }
     },
     {
@@ -95,8 +95,8 @@ module.exports = {
         root: path.join(__dirname, "ssg/nuxt")
       },
       commands: {
-        clean: "yarn clean",
-        build: "yarn generate"
+        clean: "npm run clean",
+        build: "npm run generate"
       }
     }
   ]

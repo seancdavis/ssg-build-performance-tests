@@ -5,4 +5,4 @@
 Install JS dependencies:
 
     $ cd ssg/next
-    $ yarn install
+    $ npm install
