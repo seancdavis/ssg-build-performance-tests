@@ -3,8 +3,8 @@ name: "Dataset: Dev"
 on: push
 
 jobs:
-  run-ssg-dev:
-    name: "Dataset: Dev"
+  run-eleventy-dev:
+    name: "[Dataset: Dev] Eleventy"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -13,14 +13,68 @@ jobs:
         run: npm install
       - name: Install Eleventy Dependencies
         run: cd ssg/eleventy && npm install
+      - name: Run Build
+        run: node lib/run.js dev --generators eleventy
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-gatsby-dev:
+    name: "[Dataset: Dev] Gatsby"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
       - name: Install Gatsby Dependencies
         run: cd ssg/gatsby && npm install
-      - name: Install Next Dependencies
+      - name: Run Build
+        run: node lib/run.js dev --generators gatsby
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-jekyll-dev:
+    name: "[Dataset: Dev] Jekyll"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          working-directory: ./ssg/jekyll
+      - name: Run Build
+        run: node lib/run.js dev --generators jekyll
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-next-dev:
+    name: "[Dataset: Dev] Next"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install Gatsby Dependencies
         run: cd ssg/next && npm install
+      - name: Run Build
+        run: node lib/run.js dev --generators next
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-nuxt-dev:
+    name: "[Dataset: Dev] Nuxt"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
       - name: Install Nuxt Dependencies
         run: cd ssg/nuxt && npm install
       - name: Run Build
-        run: node lib/run.js dev --generators eleventy gatsby next nuxt
+        run: node lib/run.js dev --generators nuxt
         env:
           HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
           HASURA_URL: ${{ secrets.HASURA_URL }}
