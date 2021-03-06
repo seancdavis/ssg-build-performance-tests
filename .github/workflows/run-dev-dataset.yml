@@ -3,16 +3,22 @@ name: "Dataset: Dev"
 on: push
 
 jobs:
-  run-node-ssg-dev:
-    name: "[Dataset: Dev] Eleventy, Gatsby, Next, Nuxt"
+  run-ssg-dev:
+    name: "Dataset: Dev"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
-      - name: Install SSG Dependencies
+      - name: Install Eleventy Dependencies
         run: cd ssg/eleventy && npm install
+      - name: Install Gatsby Dependencies
+        run: cd ssg/gatsby && npm install
+      - name: Install Next Dependencies
+        run: cd ssg/next && npm install
+      - name: Install Nuxt Dependencies
+        run: cd ssg/nuxt && npm install
       - name: Run Build
         run: node lib/run.js dev --generators eleventy gatsby next nuxt
         env:
