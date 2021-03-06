@@ -3,8 +3,8 @@ name: "Dataset: Dev"
 on: push
 
 jobs:
-  run-eleventy-dev:
-    name: "[Dataset: Dev] Eleventy"
+  run-node-ssg-dev:
+    name: "[Dataset: Dev] Eleventy, Gatsby, Next, Nuxt"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -14,7 +14,7 @@ jobs:
       - name: Install SSG Dependencies
         run: cd ssg/eleventy && npm install
       - name: Run Build
-        run: node lib/run.js dev --generators eleventy
+        run: node lib/run.js dev --generators eleventy gatsby next nuxt
         env:
           HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
           HASURA_URL: ${{ secrets.HASURA_URL }}
