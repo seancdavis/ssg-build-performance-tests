@@ -7,8 +7,7 @@ jobs:
     name: "[Dataset: Dev] Eleventy"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
       - name: Install Eleventy Dependencies
@@ -22,8 +21,7 @@ jobs:
     name: "[Dataset: Dev] Gatsby"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
       - name: Install Gatsby Dependencies
@@ -33,16 +31,30 @@ jobs:
         env:
           HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
           HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-hugo-dev:
+    name: "[Dataset: Dev] Hugo"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: peaceiris/actions-hugo@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Build
+        run: node lib/run.js dev --generators hugo
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
   run-jekyll-dev:
     name: "[Dataset: Dev] Jekyll"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
           working-directory: ./ssg/jekyll
+      - name: Install Dependencies
+        run: npm install
       - name: Run Build
         run: node lib/run.js dev --generators jekyll
         env:
@@ -52,8 +64,7 @@ jobs:
     name: "[Dataset: Dev] Next"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
       - name: Install Gatsby Dependencies
@@ -67,8 +78,7 @@ jobs:
     name: "[Dataset: Dev] Nuxt"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
       - name: Install Nuxt Dependencies
