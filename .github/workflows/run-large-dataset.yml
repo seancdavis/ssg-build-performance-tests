@@ -1,0 +1,90 @@
+name: "Dataset: Large"
+
+on: workflow_dispatch
+
+jobs:
+  run-eleventy-large:
+    name: "[Dataset: Large] Eleventy"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install Eleventy Dependencies
+        run: cd ssg/eleventy && npm install
+      - name: Run Build
+        run: node lib/run.js large --generators eleventy
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-gatsby-large:
+    name: "[Dataset: Large] Gatsby"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install Gatsby Dependencies
+        run: cd ssg/gatsby && npm install
+      - name: Run Build
+        run: node lib/run.js large --generators gatsby
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-hugo-large:
+    name: "[Dataset: Large] Hugo"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: peaceiris/actions-hugo@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Build
+        run: node lib/run.js large --generators hugo
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-jekyll-large:
+    name: "[Dataset: Large] Jekyll"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          working-directory: ./ssg/jekyll
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Build
+        run: node lib/run.js large --generators jekyll
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-next-large:
+    name: "[Dataset: Large] Next"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install Gatsby Dependencies
+        run: cd ssg/next && npm install
+      - name: Run Build
+        run: node lib/run.js large --generators next
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-nuxt-large:
+    name: "[Dataset: Large] Nuxt"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install Nuxt Dependencies
+        run: cd ssg/nuxt && npm install
+      - name: Run Build
+        run: node lib/run.js large --generators nuxt
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
