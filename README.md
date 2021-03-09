@@ -19,6 +19,10 @@ To keep it as even as possible, the static site generators builds are designed w
 - Only use plugins required to read and write markdown files.
 - Builds are run from scratch after clearing caches.
 
+## Updating Benchmarks
+
+The tests are run via GitHub Action workflows. There is a tiny workflow to ensure everything is wired up that runs automatically. The actual benchmark tests are longer running and are therefore triggered manually. I do this whenever there is a change made to the project that warrants running the tests again.
+
 ## Running Locally
 
 If you'd like to try out this project locally, first clone the project:
@@ -29,17 +33,23 @@ Install dependencies:
 
     $ npm install
 
+### Running Tests
+
 You can adjust the number of files generated for a series of tests by manipulating the `datasets` object in `test.config.js`.
 
 Run the tests with:
 
-    $ npm run test:builds DATASET --generators GENERATORS
+    $ node lib/run DATASET --generators GENERATORS --dryrun
 
 Where `DATASET` is the key in the dataset object, representing an array of file counts to test against, and `GENERATORS` is a space-separated list of generator names to run. If `--generators` is omitted, all generators are used in the run.
 
-If the test run completes all tests successfully, the results are cached to `src/results.json`.
+Note: `--dryrun` tells the runner to skip actions that read or write from the database.
 
-To view formatted output, you can run a development server:
+### Running Front End
+
+You can also run the front end project to view the output of the benchmark tests. In production, the results are pulled in from the database. When in development, you can use the file at `src/results-example.json` as a placeholder.
+
+Copy `src/results-example.json` to `src/results.json`. Then you can run the development server:
 
     $ npm run clean
     $ npm run develop
@@ -48,19 +58,22 @@ The site will be available at localhost:8000. (The front-end uses [Eleventy](htt
 
 ## Adding a Static Site Generator
 
-To add a SSG to be tested, add your project to the `ssg` directory. Ensure your project follows the test theory (above). Keep in mind the data source should be a series of markdown files. These files should be placed in their own directory and ignored by git. They are automatically generated and destroyed during each test run.
+To add an SSG to the benchmark tests, you must do the following:
 
-After your site is in good working order, add configuration for it to be run in `test.config.js`. (See below for config details.) You can test that this is working by running:
+1. Add your project to the repo in the `ssg` directory.
+2. Configure the build in `test.config.js`.
+3. Test that the build is working properly.
+4. Document how to setup the project.
+5. Add GitHub Action workflows.
+6. Open a pull request with your changes.
 
-    $ node lib/run base --generators GENERATOR
+### Step 1: Add Project
 
-Where `GENERATOR` is the `name` of your generator that is specified in `test.config.js`.
+Add your project to the `ssg` directory. Ensure your project follows the test theory (above). Keep in mind the data source should be a series of markdown files. These files should be placed in their own directory and ignored by git. They are automatically generated and destroyed during each test run.
 
-Before opening a PR with your new site, add a `README.md` to your project that has installation instructions for getting the project up and running on another machine. See `ssg/jekyll/README.md` for an example.
+### Step 2: Configure the Build
 
-When everything is in place, open a pull request with your changes. If it looks good, we'll run the builds tests on the test-runner server, and merge after previewing the results.
-
-### Configuration
+After your site is in good working order, add configuration for it to be run in `test.config.js`. (See below for config details.)
 
 The configuration for a SSG looks like this:
 
@@ -91,3 +104,23 @@ The configuration for a SSG looks like this:
   }
 }
 ```
+
+### Step 3: Test the Build
+
+You can test that this is working by running:
+
+    $ node lib/run dev --generators GENERATOR --dryrun
+
+Where `GENERATOR` is the `name` of your generator that is specified in `test.config.js`.
+
+### Step 4: Document Setup
+
+Before opening a PR with your new site, add a `README.md` to your project that has installation instructions for getting the project up and running on another machine. See `ssg/jekyll/README.md` for an example.
+
+### Step 5: Add GitHub Action Workflows
+
+There are several workflows in the `.github` directory. This is how the builds are run in production. Add your SSG to each workflow using examples of similar projects in those same files.
+
+### Step 6: Open a PR
+
+When everything is in place, open a pull request with your changes. If it looks good, we'll run the builds tests on the test-runner server, and merge after previewing the results.
