@@ -5,4 +5,4 @@
 Install JS dependencies:
 
     $ cd ssg/microsite
-    $ yarn install
+    $ npm install
