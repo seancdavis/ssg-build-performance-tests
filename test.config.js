@@ -74,7 +74,7 @@ module.exports = {
       name: "microsite",
       version: "1.2.1",
       color: "#FF998B",
-      framework: true,
+      framework: false,
       paths: {
         build: path.join(__dirname, "ssg/microsite/dist"),
         content: path.join(__dirname, "ssg/microsite/_pages"),
