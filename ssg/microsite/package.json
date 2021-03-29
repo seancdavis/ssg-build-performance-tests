@@ -1,0 +1,16 @@
+{
+  "name": "microsite",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf .microsite && rm -rf dist",
+    "build": "microsite build"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "microsite": "^1.2.1",
+    "remark": "^12.0.1",
+    "remark-html": "^12.0.0"
+  }
+}
