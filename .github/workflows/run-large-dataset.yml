@@ -26,7 +26,7 @@ jobs:
         run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
       - name: Install Dependencies
         run: npm install
-      - name: Install Gatsby Dependencies
+      - name: Install SSG Dependencies
         run: cd ssg/gatsby && npm install
       - name: Run Build
         run: node lib/run.js large --generators gatsby
@@ -62,6 +62,20 @@ jobs:
         env:
           HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
           HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-microsite-large:
+    name: "[Dataset: Large] Microsite"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install SSG Dependencies
+        run: cd ssg/microsite && npm install
+      - name: Run Build
+        run: node lib/run.js large --generators microsite
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
   run-next-large:
     name: "[Dataset: Large] Next"
     runs-on: ubuntu-latest
@@ -69,7 +83,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
-      - name: Install Gatsby Dependencies
+      - name: Install SSG Dependencies
         run: cd ssg/next && npm install
       - name: Run Build
         run: node lib/run.js large --generators next

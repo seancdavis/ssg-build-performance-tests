@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
-      - name: Install Gatsby Dependencies
+      - name: Install SSG Dependencies
         run: cd ssg/gatsby && npm install
       - name: Run Build
         run: node lib/run.js base --generators gatsby
@@ -60,6 +60,20 @@ jobs:
         env:
           HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
           HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-microsite-base:
+    name: "[Dataset: Base] Microsite"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install SSG Dependencies
+        run: cd ssg/microsite && npm install
+      - name: Run Build
+        run: node lib/run.js base --generators microsite
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
   run-next-base:
     name: "[Dataset: Base] Next"
     runs-on: ubuntu-latest
@@ -67,7 +81,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
-      - name: Install Gatsby Dependencies
+      - name: Install SSG Dependencies
         run: cd ssg/next && npm install
       - name: Run Build
         run: node lib/run.js base --generators next
