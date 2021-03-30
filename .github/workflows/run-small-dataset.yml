@@ -60,6 +60,20 @@ jobs:
         env:
           HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
           HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-microsite-small:
+    name: "[Dataset: Small] Microsite"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install SSG Dependencies
+        run: cd ssg/microsite && npm install
+      - name: Run Build
+        run: node lib/run.js small --generators microsite
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
   run-next-small:
     name: "[Dataset: Small] Next"
     runs-on: ubuntu-latest
