@@ -14,6 +14,20 @@ module.exports = {
   },
   tests: [
     {
+      name: "astro",
+      version: "0.20.7",
+      color: "#ff5e00",
+      paths: {
+        build: path.join(__dirname, "ssg/astro/dist"),
+        content: path.join(__dirname, "ssg/astro/src/content"),
+        root: path.join(__dirname, "ssg/astro")
+      },
+      commands: {
+        clean: "npm run clean",
+        build: "npm run build"
+      }
+    },
+    {
       name: "eleventy",
       version: "0.11.0",
       color: "#222",

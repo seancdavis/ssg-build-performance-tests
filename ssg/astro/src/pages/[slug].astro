@@ -1,0 +1,24 @@
+---
+import slug from "slug";
+
+export async function getStaticPaths() {
+  const pages = Astro.fetchContent('../content/*.md');
+  return pages.map((page) => {
+    return { 
+        params: { slug: slug(page.title) },
+        props: { page }
+    };
+  })
+}
+
+const { page } = Astro.props;
+---
+
+<html>
+  <head>
+    <title>{page.title}</title>
+  </head>
+  <body>
+    {page.astro.html}
+  </body>
+</html>
