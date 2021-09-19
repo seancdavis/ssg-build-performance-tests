@@ -3,6 +3,20 @@ name: "Dataset: Base"
 on: workflow_dispatch
 
 jobs:
+  run-astro-base:
+    name: "[Dataset: Base] Astro"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install SSG Dependencies
+        run: cd ssg/astro && npm install
+      - name: Run Build
+        run: node lib/run.js base --generators astro
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
   run-eleventy-base:
     name: "[Dataset: Base] Eleventy"
     runs-on: ubuntu-latest
