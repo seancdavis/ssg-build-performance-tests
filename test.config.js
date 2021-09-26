@@ -101,7 +101,7 @@ module.exports = {
     },
     {
       name: "next",
-      version: "9.5.4",
+      version: "11.1.2",
       color: "#0070f3",
       framework: true,
       paths: {
