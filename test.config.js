@@ -29,7 +29,7 @@ module.exports = {
     },
     {
       name: "eleventy",
-      version: "0.11.0",
+      version: "0.12.1",
       color: "#222",
       paths: {
         build: path.join(__dirname, "ssg/eleventy/dist"),
