@@ -43,7 +43,7 @@ module.exports = {
     },
     {
       name: "gatsby",
-      version: "2.24.64",
+      version: "3.14.0",
       color: "#542c85",
       framework: true,
       paths: {
