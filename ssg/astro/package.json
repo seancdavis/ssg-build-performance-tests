@@ -1,0 +1,21 @@
+{
+  "name": "@example/starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "clean": "rm -rf .snowpack/ && rm -rf dist",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^0.20.7"
+  },
+  "snowpack": {
+    "workspaceRoot": "../.."
+  },
+  "dependencies": {
+    "slug": "^5.1.0"
+  }
+}
