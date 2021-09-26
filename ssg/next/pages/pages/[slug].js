@@ -4,7 +4,7 @@ import Head from "next/head"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import remark from "remark"
+import { remark } from "remark"
 import html from "remark-html"
 
 export default function Page({ page }) {
