@@ -33,6 +33,16 @@ Install dependencies:
 
     $ npm install
 
+### Generating Test Markdown Files
+
+The test runner uses a generator to produce test markdown files with a similar structure during test runs. The related functions can be found in `lib/generator.js`.
+
+To generate while working locally, you can use the `lib/generate-test-files.js` script:
+
+    $ node lib/generate-test-files.js --generator GENERATOR --count COUNT
+
+Both `GENERATOR` and `COUNT` are required and should be adjusted to your desired values. `GENERATOR` should match the `name` property of the generator from `test.config.js`. This is how the path to the content directory is resolved.
+
 ### Running Tests
 
 You can adjust the number of files generated for a series of tests by manipulating the `datasets` object in `test.config.js`.
