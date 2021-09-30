@@ -17,6 +17,20 @@ jobs:
         env:
           HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
           HASURA_URL: ${{ secrets.HASURA_URL }}
+  run-elderjs-small:
+    name: "[Dataset: Small] Elder.js"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Install SSG Dependencies
+        run: cd ssg/elderjs && npm install
+      - name: Run Build
+        run: node lib/run.js small --generators elderjs
+        env:
+          HASURA_SECRET: ${{ secrets.HASURA_SECRET }}
+          HASURA_URL: ${{ secrets.HASURA_URL }}
   run-eleventy-small:
     name: "[Dataset: Small] Eleventy"
     runs-on: ubuntu-latest
