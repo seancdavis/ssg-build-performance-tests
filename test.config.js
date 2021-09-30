@@ -28,6 +28,20 @@ module.exports = {
       }
     },
     {
+      name: "elderjs",
+      version: "1.6.1",
+      color: "#05395A",
+      paths: {
+        build: path.join(__dirname, "ssg/elderjs/public"),
+        content: path.join(__dirname, "ssg/elderjs/src/routes/blog"),
+        root: path.join(__dirname, "ssg/elderjs")
+      },
+      commands: {
+        clean: "npm run clean",
+        build: "npm run build"
+      }
+    },
+    {
       name: "eleventy",
       version: "0.12.1",
       color: "#222",
