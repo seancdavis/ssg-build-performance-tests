@@ -1,0 +1,91 @@
+.Dd Dec 13, 2019
+.Dt mkws 1
+.Os
+.Sh NAME
+.Nm mkws
+.Nd make web site
+.Sh SYNOPSIS
+.Nm
+.Ar url
+.Op path
+.Sh DESCRIPTION
+The
+.Nm
+utility uses
+.Xr pp 1
+and the theme files in the
+.Ev MKWSTHEMEPATH
+directory
+to preprocess all files in
+.Op path
+in order to produce a static web site in the current directory. If no
+.Op path
+is specified, the current directory is used instead.
+.Pp
+The options are as follows:
+.Bl -tag -width Ds
+.It Ar url
+The url of the web site. It is used for generating
+.Pa sitemap.xml
+.
+.It Op path
+The path where the unpreprocessed files are located. If no
+.Op path
+is specified, the current directory is used instead.
+.El
+.Sh ENVIRONMENT
+.Bl -tag -width MKWSTHEMEDIR
+.It Ev MKWSTHEMEDIR
+The directory containing the theme files. See the
+.Em FILES
+section for the minimum required files for a theme. If no
+.Ev MKWSTHEMEDIR
+variable is set
+.Pa [path]/share
+wil be used.
+.It Ev LANG
+The language for the website. It will be parsed to fill in the
+.Em lang
+attribute of the
+.Em html
+element and then
+.Em charset
+.Em meta
+element.
+.El
+.Sh FILES
+.Bl -tag -width "/tmp/vi.recover
+.It Pa $MKWSTHEMEDIR/l.upphtml
+The layout file of the website. It contains the
+.Em DOCTYPE ,
+.Em html ,
+.Em head ,
+.Em title ,
+.Em meta
+,
+.Em link
+,
+.Em body
+elements.
+.It Pa $MKWSTHEMEDIR/sitemap.xml
+The
+.Pa sitemap.txt
+template.
+.El
+.Sh EXIT STATUS
+.Ex -std
+.Sh EXAMPLES
+Make https://example.com web site using the unpreprocessed files in the
+current directory
+.Pp
+.Dl $ mkws https://example.com
+.Pp
+Make https://example.com web site using the unpreprocessed files in the
+.Ar ~/src/ws
+directory
+.Pp
+.Dl $ mkws https://example.com ~/src/ws
+.Sh SEE ALSO
+.Xr sh 1
+.Xr pp 1
+.Xr locale 1

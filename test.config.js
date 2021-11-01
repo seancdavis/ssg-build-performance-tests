@@ -100,6 +100,20 @@ module.exports = {
       }
     },
     {
+      name: "mkws",
+      version: "4.0.15",
+      color: "#DD1144",
+      paths: {
+        build: path.join(__dirname, "ssg/mkws"),
+        content: path.join(__dirname, "ssg/mkws"),
+        root: path.join(__dirname, "ssg/mkws")
+      },
+      commands: {
+        clean: "find . -name '*.html' -delete",
+        build: "./bin/mkws https://ssg-build-performance-tests.netlify.app"
+      }
+    },
+    {
       name: "next",
       version: "11.1.2",
       color: "#0070f3",

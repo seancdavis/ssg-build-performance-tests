@@ -1,0 +1,55 @@
+.Dd Sep 4, 2020
+.Dt lmt
+.Os
+.Sh NAME
+.Nm lmt
+.Nd last modification time
+.Sh SYNOPSIS
+.Nm lmt
+.Op Fl f Ar format
+.Ar file ...
+.Sh DESCRIPTION
+The
+.Nm
+utility prints the last modification time for the given
+.Ar file
+to standard output.
+The information displayed is obtained by calling
+.Xr lstat 2
+with the given
+argument and evaluating the returned structure.
+.Pp
+The options are as follows:
+.Bl -tag -width Ds
+.It Fl f Ar format
+The format in which to display the time.
+The format string may contain any of the conversion specifications
+described in the
+.Xr strftime 3
+manual page, as well as any arbitrary text.
+A newline
+.Pq Ql \en
+character is always output after the characters specified by
+the format string.
+The format string for the default display is:
+.Bd -literal -offset indent
+%a %b %e %H:%M:%S %Z %Y
+.Ed
+.El
+.Sh EXIT STATUS
+.Ex -std
+.Sh EXAMPLES
+Print last modification time for
+.Pa file1
+to standard output:
+.Pp
+.Dl $ lmt file1
+.Pp
+Print last modification time for
+.Pa file1
+to standard output in ISO 8601 format:
+.Pp
+.Dl $ lmt -f "%Y-%m-%dT%H:%M:%S%z" file1
+.Sh SEE ALSO
+.Xr stat 1
+.Xr strftime 3

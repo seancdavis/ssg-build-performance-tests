@@ -1,0 +1,46 @@
+.Dd Apr 25, 2019
+.Dt pp 1
+.Os
+.Sh NAME
+.Nm pp
+.Nd preprocessor
+.Sh SYNOPSIS
+.Nm pp
+.Op Fl d
+.Ar file
+.Op args ...
+.Sh DESCRIPTION
+The
+.Nm
+utility processes
+.Ar file
+to produce output that is used as input to another
+program.
+.Pp
+It executes code enclosed in
+.Dq #!\en
+delimiters using
+.Xr sh 1 .
+.Op args ...
+are passed to the embbeded script and are available
+via the usual
+.Em  $1, $2, ...
+positional parameters.
+.Pp
+The options are as follows:
+.Bl -tag -width Ds
+.It Fl d
+.Nm
+will dump the generated
+.Xr sh 1
+code instead of executing it. This is useful for debugging.
+.El
+.Sh EXIT STATUS
+.Ex -std
+.Sh EXAMPLES
+Preprocess file with arguments:
+.Pp
+.Dl $ pp file.upphtml a b
+.Pp
+.Sh SEE ALSO
+.Xr sh 1

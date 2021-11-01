@@ -1,0 +1,20 @@
+#!/bin/sh
+PATH=./bin:$PATH
+
+usage() {
+	>&2 printf "usage: %s url [path]\\n" "$(basename "$0")"
+	exit 1
+}
+
+test $# -lt 1 && usage
+
+export src=${2:-.}
+export share=${MKWSTHEMEDIR:-"$src"/share}
+export LANG=${LANG:-en_US.UTF-8}
+
+for t in "$src"/*.md
+do
+	echo "Making $(basename "${t%.md}".html)"
+	eval $(awk -F': ' '/^---/{if(f==1) exit; f=1; next}{printf "export %s=\"%s\"\n", $1, $2}' $t)
+	pp "$share"/l.upphtml "$t" "$1" > "${t%.md}.html"
+done

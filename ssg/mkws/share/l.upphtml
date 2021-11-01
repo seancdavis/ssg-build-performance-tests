@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang=${LANG%%_*}>
+	<head>
+	<meta charset=${LANG##*.}>
+	<meta name=viewport content='width=device-width, initial-scale=1'>
+	<title>$title</title>
+</head>
+<body>
+	<h1>$title</h1>
+	#!
+	sed '1 { /^---/ { :a N; /\n---/! ba; d} }' "$1" | cmark
+	#!
+</body>
+</html>
+pe html>
+
+<head>
