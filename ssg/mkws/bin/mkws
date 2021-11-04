@@ -18,3 +18,7 @@ do
 	eval $(awk -F': ' '/^---/{if(f==1) exit; f=1; next}{printf "export %s=\"%s\"\n", $1, $2}' $t)
 	pp "$share"/l.upphtml "$t" "$1" > "${t%.md}.html"
 done
+
+echo "Making sitemap.xml"
+pp "$share"/sitemap.uppxml "$1" > sitemap.xml
+
