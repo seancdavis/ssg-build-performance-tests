@@ -98,8 +98,8 @@ The configuration for a SSG looks like this:
     // Directory in which the SSG's built files will reside after running a
     // build.
     build: path.join(__dirname, "ssg/jekyll/_site"),
-    // Directory in which to generate markdown files. This will be cleaned after
-    // each build.
+    // Directory in which to generate markdown files. All markdown files in
+    // this directory will be cleaned after each build.
     content: path.join(__dirname, "ssg/jekyll/_pages"),
     // Project root directory.
     root: path.join(__dirname, "ssg/jekyll")
