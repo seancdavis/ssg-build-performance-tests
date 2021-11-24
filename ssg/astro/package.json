@@ -6,14 +6,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "clean": "rm -rf .snowpack/ && rm -rf dist",
+    "clean": "rm -rf node_modules/.vite/ && rm -rf dist",
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.20.7"
-  },
-  "snowpack": {
-    "workspaceRoot": "../.."
+    "astro": "^0.21.0"
   },
   "dependencies": {
     "slug": "^5.1.0"
