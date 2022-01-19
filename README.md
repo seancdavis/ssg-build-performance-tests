@@ -57,14 +57,7 @@ Note: `--dryrun` tells the runner to skip actions that read or write from the da
 
 ### Running Front End
 
-You can also run the front end project to view the output of the benchmark tests. In production, the results are pulled in from the database. When in development, you can use the file at `src/results-example.json` as a placeholder.
-
-Copy `src/results-example.json` to `src/results.json`. Then you can run the development server:
-
-    $ npm run clean
-    $ npm run develop
-
-The site will be available at localhost:8000. (The front-end uses [Eleventy](https://www.11ty.dev/).)
+See `website` for details.
 
 ## Adding a Static Site Generator
 
