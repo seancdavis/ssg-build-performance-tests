@@ -3,4 +3,4 @@
   publish = "dist"
 
 [[plugins]]
-  package = "/.netlify/netlify-plugin-jest"
+  package = "@seancdavis/netlify-plugin-jest"

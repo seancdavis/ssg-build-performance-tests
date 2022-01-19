@@ -3,7 +3,7 @@ const flatMap = require("lodash/flatMap")
 const mean = require("lodash/mean")
 const uniq = require("lodash/uniq")
 
-const testConfig = require("../../test.config")
+const testConfig = require("../../../test.config")
 const results = require("../results.json")
 
 /**

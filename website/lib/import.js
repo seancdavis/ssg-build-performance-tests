@@ -3,8 +3,8 @@ const path = require("path")
 const gql = require("graphql-tag")
 const lodash = require("lodash")
 
-const Database = require("./database")
-const { getLoggerConfig } = require("./config")
+const Database = require("../../lib/database")
+const { getLoggerConfig } = require("../../lib/config")
 
 const config = getLoggerConfig()
 
