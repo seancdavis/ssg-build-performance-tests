@@ -1,6 +1,6 @@
 const lodash = require("lodash")
 
-const projectConfig = require("../test.config")
+const projectConfig = require("../../../test.config")
 
 /**
  * Takes the test config and returns an array of objects representing individual

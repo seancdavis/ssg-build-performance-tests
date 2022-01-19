@@ -1,7 +1,7 @@
 const yargs = require("yargs")
 
 const { cleanDir, generateFiles } = require("./generator")
-const config = require("../test.config")
+const config = require("../../../test.config")
 
 const argv = yargs
   .option("generator", {

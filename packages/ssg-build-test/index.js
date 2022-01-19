@@ -2,9 +2,9 @@ const chalk = require("chalk")
 const ProgressBar = require("progress")
 const yargs = require("yargs")
 
-const { cleanDir: removeTestFiles, generateFiles: generateTestFiles } = require("./generator")
-const Logger = require("./logger")
-const Builder = require("./builder")
+const { cleanDir: removeTestFiles, generateFiles: generateTestFiles } = require("./lib/generator")
+const Logger = require("./lib/logger")
+const Builder = require("./lib/builder")
 
 // Specifies the accepted command-line arguments.
 const argv = yargs
@@ -32,7 +32,7 @@ const argv = yargs
 const dataset = argv._[0]
 
 // Build a flattened map of tests to run.
-let tests = require("./config").getTestsConfig(dataset)
+let tests = require("./lib/config").getTestsConfig(dataset)
 if (argv.generators && argv.generators.length > 0) {
   tests = tests.filter(t => argv.generators.includes(t.name))
 }
