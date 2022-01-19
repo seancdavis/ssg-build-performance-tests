@@ -4,9 +4,9 @@ This is a website built with 11ty that visualizes the data from the build perfor
 
 ## Running Locally
 
-Install dependencies:
+This project uses Yarn workspaces to manage dependencies. Before running the website, install dependencies from the root of the project (up one directory).
 
-    $ npm install
+    $ yarn install
 
 In production, the results are pulled in from a database. In development, you can use the file at `src/results-example.json` as a placeholder.
 
