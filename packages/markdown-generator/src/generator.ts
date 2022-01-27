@@ -1,20 +1,19 @@
-const fs = require("fs")
-const glob = require("glob")
-const lodash = require("lodash")
-const { LoremIpsum } = require("lorem-ipsum")
-const path = require("path")
+import fs from "fs"
+import glob from "glob"
+import { LoremIpsum } from "lorem-ipsum"
+import path from "path"
 
 /**
  * Creates a directory in which to add markdown files.
  *
  * @param {string} dir Path to the directory to create.
  */
-exports.initDir = dir => {
+export const initDir = (dir) => {
   const destDir = path.resolve(dir)
   // Create directory if it doesn't exist.
   fs.mkdirSync(destDir, { recursive: true })
   // Remove any markdown files from the directory.
-  glob.sync(`${destDir}/*.md`).map(f => fs.unlinkSync(f))
+  glob.sync(`${destDir}/*.md`).map((f) => fs.unlinkSync(f))
   // Return the path to the directory.
   return destDir
 }
@@ -24,9 +23,9 @@ exports.initDir = dir => {
  *
  * @param {string} dir Directory in which to remove markdown files.
  */
-exports.cleanDir = dir => {
+export const cleanDir = (dir) => {
   const files = glob.sync(`${dir}/*.md`)
-  files.map(f => fs.unlinkSync(f))
+  files.map((f) => fs.unlinkSync(f))
   return files
 }
 
@@ -35,7 +34,7 @@ exports.cleanDir = dir => {
  *
  * @param {string} title Title of the page
  */
-exports.generateSlug = title => {
+export const generateSlug = (title) => {
   return title.toLowerCase().replace(/\ /gi, "-")
 }
 
@@ -46,14 +45,14 @@ exports.generateSlug = title => {
  * @param {string} title Title of the page.
  * @param {string} body Main body for the markdown file.
  */
-exports.formatMarkdown = (title, body) => {
-  return lodash.trim(`
+export const formatMarkdown = (title, body) => {
+  return `
 ---
 title: ${title}
 ---
 
 ${body}
-  `)
+  `.trim()
 }
 
 /**
@@ -62,11 +61,11 @@ ${body}
  * @param {string} dest Path to where the file should be written.
  * @param {string} content File content.
  */
-exports.writeFile = (dest, content) => {
+export const writeFile = (dest, content) => {
   // Check for duplicates and re-run if one was found.
   if (fs.existsSync(dest)) {
     console.log(`Duplicate page for ${path.basename(dest)}. Regenerating ...`)
-    return exports.generateFile(path.dirname(dest))
+    return generateFile(path.dirname(dest))
   }
   // Otherwise, create the file.
   return fs.writeFileSync(dest, content)
@@ -77,13 +76,13 @@ exports.writeFile = (dest, content) => {
  *
  * @param {string} dest Directory in which the file should be written.
  */
-exports.generateFile = dest => {
+export const generateFile = (dest) => {
   const lorem = new LoremIpsum()
   const title = lorem.generateWords(5)
   const body = lorem.generateParagraphs(3).replace(/\n/gi, "\n\n")
-  const content = exports.formatMarkdown(title, body)
-  const outputFile = path.join(dest, `${exports.generateSlug(title)}.md`)
-  exports.writeFile(outputFile, content)
+  const content = formatMarkdown(title, body)
+  const outputFile = path.join(dest, `${generateSlug(title)}.md`)
+  writeFile(outputFile, content)
   return outputFile
 }
 
@@ -93,8 +92,8 @@ exports.generateFile = dest => {
  * @param {string} dest Directory in which the files should be written
  * @param {number} count The number of files to generate
  */
-exports.generateFiles = (dest, count) => {
-  exports.initDir(dest)
+export const generateFiles = (dest, count) => {
+  initDir(dest)
   const iterator = [...Array(count)]
-  return iterator.map(() => exports.generateFile(dest))
+  return iterator.map(() => generateFile(dest))
 }

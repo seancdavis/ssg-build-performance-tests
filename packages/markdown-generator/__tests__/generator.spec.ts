@@ -1,9 +1,9 @@
-const fs = require("fs")
-const glob = require("glob")
-const path = require("path")
-const rimraf = require("rimraf")
+import fs from "fs"
+import glob from "glob"
+import path from "path"
+import rimraf from "rimraf"
 
-const Generator = require("./generator")
+import * as Generator from "../src/generator"
 
 const mockDirPrefix = path.join(__dirname, "tmp")
 const mockDir = `${mockDirPrefix}/${new Date().getTime()}`
@@ -136,6 +136,8 @@ describe("generateFiles()", () => {
   it("returns the files it created", () => {
     expect(glob.sync(`${mockDir}/*.md`).length).toEqual(0)
     const result = Generator.generateFiles(mockDir, 10)
-    expect(result.filter(f => f.includes(mockDir) && f.includes(".md")).length).toEqual(10)
+    expect(
+      result.filter((f) => f.includes(mockDir) && f.includes(".md")).length
+    ).toEqual(10)
   })
 })
